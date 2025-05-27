@@ -1,680 +1,1110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hộp Quà Rexri - Chăm Sóc Da Cao Cấp</title>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hộp Quà Rexri Creative Line - Chăm Sóc Da Cao Cấp Từ Hàn Quốc</title>
     <link rel="icon" type="image/png" href="./img/logo.png" sizes="192x192" />
-    <meta name="description" content="Khám phá hộp quà Rexri Creative Line cao cấp, chăm sóc da hoàn hảo. Giảm 20% ngay hôm nay!" />
-    <meta name="keywords" content="hộp quà tặng, Rexri, chăm sóc da, mỹ phẩm cao cấp, giảm giá 20%" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="🎁 Hộp quà Rexri Creative Line cao cấp từ Hàn Quốc - 6 sản phẩm chăm sóc da hoàn chỉnh. Giảm giá đặc biệt từ 1.800.000đ xuống 1.299.000đ. Tặng kèm túi đựng cao cấp + miễn phí vận chuyển toàn quốc."
+    />
+    <meta
+      name="keywords"
+      content="hộp quà tặng rexri, mỹ phẩm hàn quốc, chăm sóc da, mỹ phẩm & dược mỹ phẩm bác sĩ thu tuyết, rexri creative line, serum chống lão hóa, toner làm sạch da, kem dưỡng ẩm, quà tặng mẹ, skincare korea"
+    />
+    <meta name="author" content="Bác Sĩ Thu Tuyết - Chuyên gia da liễu" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Rexri" />
-  
-    <!-- Open Graph for Social Media -->
-    <meta property="og:title" content="Hộp Quà Tặng Rexri - Chăm Sóc Da Cao Cấp" />
-    <meta property="og:description" content="Khám phá hộp quà Rexri Creative Line cao cấp, chăm sóc da hoàn hảo. Giảm 20% ngay hôm nay!" />
-    <meta property="og:type" content="website" />
-  
+    <link rel="canonical" href="https://yourwebsite.com/" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Hộp Quà Rexri Creative Line - Chăm Sóc Da Cao Cấp Từ Hàn Quốc"
+    />
+    <meta
+      property="og:description"
+      content="🎁 Bộ sản phẩm chăm sóc da hoàn chỉnh từ Hàn Quốc. Giảm giá đặc biệt 501.000đ. Tặng kèm túi đựng cao cấp + miễn phí ship."
+    />
+    <meta
+      property="og:image"
+      content="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rexri-creative-line.jpg-8xeGcLv9APV1QBDPmoNB8CJ6vD2WwT.jpeg"
+    />
+    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta property="og:type" content="product" />
+    <meta property="og:locale" content="vi_VN" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hộp Quà Rexri Creative Line - Chăm Sóc Da Cao Cấp" />
+    <meta
+      name="twitter:description"
+      content="🎁 Bộ sản phẩm chăm sóc da hoàn chỉnh từ Hàn Quốc. Giảm giá đặc biệt 501.000đ."
+    />
+    <meta
+      name="twitter:image"
+      content="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rexri-creative-line.jpg-8xeGcLv9APV1QBDPmoNB8CJ6vD2WwT.jpeg"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Hộp Quà Rexri Creative Line",
+        "image": [
+          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rexri-creative-line.jpg-8xeGcLv9APV1QBDPmoNB8CJ6vD2WwT.jpeg"
+        ],
+        "description": "Bộ sản phẩm chăm sóc da hoàn chỉnh từ Hàn Quốc gồm 6 sản phẩm: 3 full size và 3 mini size",
+        "brand": {
+          "@type": "Brand",
+          "name": "Rexri Creative"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://yourwebsite.com/",
+          "priceCurrency": "VND",
+          "price": "1299000",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "Mỹ Phẩm & Dược Mỹ Phẩm Bác Sĩ Thu Tuyết"
+          }
+        }
+      }
+    </script>
+
+    <!-- Font Awesome for Social Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              "deep-charcoal": "#2c3e50",
-              "soft-charcoal": "#34495e",
-              "warm-ivory": "#f8f6f0",
-              "cream-beige": "#f5f2e8",
-              "muted-gold": "#c9a876",
-              "soft-gold": "#e8d5b7",
-              "dusty-rose": "#d4a574",
-              "pale-rose": "#f0e6d6",
-              "sage-muted": "#8fbc8f",
-              "warm-gray": "#95a5a6",
-              "accent-bronze": "#a0826d",
-              "soft-bronze": "#d4c4b0",
+              'blue-elegant': '#e6f3ff',
+              'blue-soft': '#cce7ff',
+              'blue-medium': '#99d6ff',
+              'blue-deep': '#4da6ff',
+              'blue-royal': '#0066cc',
+              'blue-navy': '#003d7a',
+              'pearl-white': '#fafcff',
+              'silver-light': '#f0f4f8',
+              'gold-accent': '#ffd700',
+              'cream-luxury': '#fff8f0',
             },
             fontFamily: {
-              elegant: ["Playfair Display", "serif"],
-              modern: ["Inter", "sans-serif"],
+              elegant: ['Playfair Display', 'serif'],
+              modern: ['Inter', 'sans-serif'],
             },
             animation: {
-              "gentle-float": "gentleFloat 4s ease-in-out infinite",
-              "soft-pulse": "softPulse 3s ease-in-out infinite",
-              "subtle-bounce": "subtleBounce 2s ease-in-out infinite",
-              "fade-in-up": "fadeInUp 0.8s ease-out",
-              "slide-in-left": "slideInLeft 0.6s ease-out",
-              "slide-in-right": "slideInRight 0.6s ease-out",
+              float: 'float 6s ease-in-out infinite',
+              'pulse-elegant': 'pulseElegant 4s ease-in-out infinite',
+              'slide-up': 'slideUp 0.8s ease-out',
+              'fade-in': 'fadeIn 1s ease-out',
+              'bounce-soft': 'bounceSoft 2s ease-in-out infinite',
+              'scale-in': 'scaleIn 0.6s ease-out',
+              shimmer: 'shimmer 2s linear infinite',
+              'rotate-3d': 'rotate3d 10s linear infinite',
+              'video-entrance': 'videoEntrance 1.2s ease-out',
+              'modal-in': 'modalIn 0.3s ease-out',
+              'modal-out': 'modalOut 0.3s ease-in',
+            },
+            spacing: {
+              18: '4.5rem',
+              88: '22rem',
             },
           },
         },
       };
     </script>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-      /* Hide Scrollbars and Limit Width */
-      html,
-      body {
-        max-width: 100vw;
-        overflow-x: hidden;
-        /* Hide scrollbar for IE, Edge and Firefox */
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-      }
-
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      html::-webkit-scrollbar,
-      body::-webkit-scrollbar {
-        display: none;
-      }
-
-      /* Ensure all containers respect max width */
       * {
-        max-width: 100%;
         box-sizing: border-box;
       }
 
-      /* Container width control */
-      .container {
-        max-width: 100vw;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 1rem;
-        padding-right: 1rem;
+      /* Hide default scrollbar for all browsers */
+      html {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
       }
 
-      /* Prevent horizontal overflow */
-      .overflow-control {
+      html::-webkit-scrollbar {
+        width: 0; /* Remove scrollbar space */
+        background: transparent; /* Optional: just make scrollbar invisible */
+      }
+
+      body {
         overflow-x: hidden;
-        max-width: 100vw;
+        background: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 30%, #99d6ff 70%, #4da6ff 100%);
+        min-height: 100vh;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
       }
 
-      /* Custom scrollbar for internal elements if needed */
-      .custom-scroll {
-        scrollbar-width: thin;
-        scrollbar-color: rgba(201, 168, 118, 0.3) transparent;
+      body::-webkit-scrollbar {
+        width: 0; /* Remove scrollbar space */
+        background: transparent; /* Optional: just make scrollbar invisible */
       }
 
-      .custom-scroll::-webkit-scrollbar {
-        width: 6px;
-      }
-
-      .custom-scroll::-webkit-scrollbar-track {
+      /* Hide scrollbar for any scrollable element */
+      *::-webkit-scrollbar {
+        width: 0;
         background: transparent;
       }
 
-      .custom-scroll::-webkit-scrollbar-thumb {
-        background-color: rgba(201, 168, 118, 0.3);
-        border-radius: 3px;
+      * {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
       }
 
-      .custom-scroll::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(201, 168, 118, 0.5);
-      }
-
-      /* Optimized Gradients */
-      .elegant-gradient {
-        background: linear-gradient(
-          135deg,
-          #f8f6f0 0%,
-          #f5f2e8 50%,
-          #f0e6d6 100%
-        );
-      }
-
-      .charcoal-gradient {
-        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-      }
-
-      .muted-gold-gradient {
-        background: linear-gradient(135deg, #c9a876 0%, #e8d5b7 100%);
-      }
-
-      .rose-gradient {
-        background: linear-gradient(135deg, #f0e6d6 0%, #e8d5b7 100%);
-      }
-
-      /* Soft 3D Effects - Reduced Intensity */
-      .soft-card {
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        border-radius: 1.5rem;
-        border: 1px solid rgba(201, 168, 118, 0.1);
-      }
-
-      .soft-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 12px 24px rgba(44, 62, 80, 0.08);
-      }
-
-      .gentle-card {
-        transition: all 0.4s ease;
-        border-radius: 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-
-      .gentle-card:hover {
-        transform: translateY(-2px) scale(1.01);
-        box-shadow: 0 8px 20px rgba(44, 62, 80, 0.06);
-      }
-
-      /* Optimized Animations */
-      @keyframes gentleFloat {
+      /* Enhanced 3D Animations */
+      @keyframes float {
         0%,
         100% {
-          transform: translateY(0px);
+          transform: translateY(0px) rotateX(0deg);
         }
         50% {
-          transform: translateY(-8px);
+          transform: translateY(-20px) rotateX(5deg);
         }
       }
 
-      @keyframes softPulse {
-        0%,
+      @keyframes videoEntrance {
+        0% {
+          opacity: 0;
+          transform: translateY(50px) rotateX(15deg) scale(0.9);
+        }
         100% {
-          box-shadow: 0 0 15px rgba(201, 168, 118, 0.2);
+          opacity: 1;
+          transform: translateY(0) rotateX(0deg) scale(1);
+        }
+      }
+
+      @keyframes modalIn {
+        0% {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        100% {
+          opacity: 1;
           transform: scale(1);
         }
-        50% {
-          box-shadow: 0 0 25px rgba(201, 168, 118, 0.3);
-          transform: scale(1.02);
+      }
+
+      @keyframes modalOut {
+        0% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.8);
         }
       }
 
-      @keyframes subtleBounce {
+      @keyframes pulseElegant {
+        0%,
+        100% {
+          box-shadow: 0 0 30px rgba(77, 166, 255, 0.3);
+          transform: scale(1) rotateY(0deg);
+        }
+        50% {
+          box-shadow: 0 0 50px rgba(77, 166, 255, 0.6);
+          transform: scale(1.02) rotateY(2deg);
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px) rotateX(10deg);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) rotateX(0deg);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes bounceSoft {
         0%,
         100% {
           transform: translateY(0px);
         }
         50% {
-          transform: translateY(-6px);
+          transform: translateY(-15px);
         }
       }
 
-      @keyframes fadeInUp {
+      @keyframes scaleIn {
         from {
           opacity: 0;
-          transform: translateY(20px);
+          transform: scale(0.8) rotateY(-10deg);
         }
         to {
           opacity: 1;
-          transform: translateY(0);
+          transform: scale(1) rotateY(0deg);
         }
       }
 
-      @keyframes slideInLeft {
-        from {
-          opacity: 0;
-          transform: translateX(-30px);
+      @keyframes shimmer {
+        0% {
+          background-position: -200px 0;
         }
-        to {
-          opacity: 1;
-          transform: translateX(0);
+        100% {
+          background-position: calc(200px + 100%) 0;
         }
       }
 
-      @keyframes slideInRight {
-        from {
-          opacity: 0;
-          transform: translateX(30px);
+      @keyframes rotate3d {
+        0% {
+          transform: rotateY(0deg);
         }
-        to {
-          opacity: 1;
-          transform: translateX(0);
+        100% {
+          transform: rotateY(360deg);
         }
       }
 
-      /* Soft CTA Button */
+      /* Elegant Blue Gradients */
+      .blue-gradient {
+        background: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 50%, #99d6ff 100%);
+      }
+
+      .blue-deep-gradient {
+        background: linear-gradient(135deg, #4da6ff 0%, #0066cc 50%, #003d7a 100%);
+      }
+
+      .pearl-gradient {
+        background: linear-gradient(135deg, #fafcff 0%, #f0f4f8 50%, #e6f3ff 100%);
+      }
+
+      .luxury-gradient {
+        background: linear-gradient(135deg, #fff8f0 0%, #fafcff 50%, #e6f3ff 100%);
+      }
+
+      /* Enhanced 3D Card styles */
+      .elegant-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        border: 2px solid rgba(77, 166, 255, 0.2);
+        border-radius: 10px;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+      }
+
+      .elegant-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -200px;
+        width: 200px;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(77, 166, 255, 0.2), transparent);
+        transition: left 0.8s;
+      }
+
+      .elegant-card:hover::before {
+        left: 100%;
+      }
+
+      .elegant-card:hover {
+        /* transform: translateY(-10px) rotateX(5deg) rotateY(5deg); */
+        box-shadow: 0 30px 60px rgba(0, 102, 204, 0.2);
+        border-color: rgba(77, 166, 255, 0.5);
+      }
+
+      /* Enhanced 3D Button styles */
       .cta-button {
-        background: linear-gradient(135deg, #c9a876 0%, #e8d5b7 100%);
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 12px rgba(201, 168, 118, 0.25);
+        background: linear-gradient(135deg, #4da6ff 0%, #0066cc 100%);
+        color: white;
+        font-weight: bold;
+        padding: 1.2rem 2.5rem;
+        border-radius: 10px;
         border: none;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        box-shadow: 0 10px 25px rgba(77, 166, 255, 0.4);
+        position: relative;
+        overflow: hidden;
+        transform-style: preserve-3d;
+      }
+
+      .cta-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.6s;
+      }
+
+      .cta-button:hover::before {
+        left: 100%;
       }
 
       .cta-button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(201, 168, 118, 0.35);
+        /* transform: translateY(-5px) rotateX(5deg); */
+        box-shadow: 0 20px 40px rgba(77, 166, 255, 0.5);
+        background: linear-gradient(135deg, #0066cc 0%, #003d7a 100%);
       }
 
-      .cta-button:active {
-        transform: translateY(0);
+      /* Product Card with integrated layout */
+      .product-card {
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        border: 2px solid rgba(77, 166, 255, 0.1);
+        transform-style: preserve-3d;
       }
 
-      /* Sticky CTA */
+      .product-card:hover {
+        /* transform: translateY(-8px) rotateX(3deg); */
+        box-shadow: 0 25px 50px rgba(0, 102, 204, 0.15);
+      }
+
+      .product-image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 7px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .product-image-container:hover {
+        transform: scale(1.05) rotateY(5deg);
+      }
+
+      .product-image-container::after {
+        content: '🔍';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 0.5rem;
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        font-size: 1.2rem;
+        pointer-events: none;
+      }
+
+      .product-image-container:hover::after {
+        opacity: 1;
+      }
+
+      /* Gift box description styling */
+      .gift-description {
+        background: linear-gradient(135deg, #fff8f0 0%, #fafcff 100%);
+        border: 2px solid #ffd700;
+        border-radius: 7px;
+        padding: 1.5rem;
+        position: relative;
+        overflow: hidden;
+        animation: slideUp 0.8s ease-out 0.6s both;
+      }
+
+      .gift-description::before {
+        content: '🎁';
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        font-size: 3rem;
+        opacity: 0.1;
+        animation: rotate3d 10s linear infinite;
+      }
+
+      /* Video container with 3D effect */
+      .video-container {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 25px 50px rgba(0, 102, 204, 0.2);
+        transform-style: preserve-3d;
+        transition: all 0.4s ease;
+        animation: videoEntrance 1.2s ease-out;
+      }
+
+      .video-container:hover {
+        transform: rotateX(5deg) rotateY(5deg) scale(1.02);
+        box-shadow: 0 35px 70px rgba(0, 102, 204, 0.3);
+      }
+
+      .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, rgba(77, 166, 255, 0.1), rgba(153, 214, 255, 0.1));
+        pointer-events: none;
+      }
+
+      /* Image Lightbox Modal */
+      .lightbox-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .lightbox-modal.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .lightbox-content {
+        max-width: 90vw;
+        max-height: 90vh;
+        position: relative;
+        animation: modalIn 0.3s ease-out;
+      }
+
+      .lightbox-image {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      }
+
+      .lightbox-close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+
+      .lightbox-close:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(1.1);
+      }
+
+      /* Enhanced Order Summary */
+      .order-summary {
+        background: linear-gradient(135deg, #e6f3ff 0%, #f0f4f8 100%);
+        border: 2px solid rgba(77, 166, 255, 0.3);
+        border-radius: 10px;
+        padding: 1.5rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .order-summary::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #4da6ff, #0066cc, #4da6ff);
+        background-size: 200% 100%;
+        animation: shimmer 2s linear infinite;
+      }
+
+      .order-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(77, 166, 255, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .order-item:hover {
+        background: rgba(77, 166, 255, 0.05);
+        border-radius: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      .order-item:last-child {
+        border-bottom: none;
+      }
+
+      .order-item-icon {
+        width: 2rem;
+        height: 2rem;
+        background: linear-gradient(135deg, #4da6ff, #0066cc);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.875rem;
+        margin-right: 0.75rem;
+        flex-shrink: 0;
+      }
+
+      /* Enhanced Order Total Section */
+      .order-total-section {
+        border-t-2: 2px solid rgba(77, 166, 255, 0.3);
+        padding-top: 1rem;
+        margin-top: 1rem;
+        background: linear-gradient(135deg, rgba(77, 166, 255, 0.1), rgba(153, 214, 255, 0.1));
+        border-radius: 1rem;
+        padding: 1rem;
+      }
+
+      .order-total-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+      }
+
+      .order-savings {
+        text-align: center;
+        padding: 0.5rem;
+        background: rgba(16, 185, 129, 0.1);
+        border-radius: 0.75rem;
+        border: 1px solid rgba(16, 185, 129, 0.2);
+      }
+
+      /* Intersection Observer */
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(30px) rotateX(10deg);
+        transition: all 1s ease-out;
+      }
+
+      .fade-in-section.visible {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+      }
+
+      /* Price styling with 3D effect */
+      .price-original {
+        text-decoration: line-through;
+        color: #6b7280;
+      }
+
+      .price-sale {
+        color: #0066cc;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 102, 204, 0.2);
+      }
+
+      /* Gift badge with 3D animation */
+      .gift-badge {
+        background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 10px;
+        font-size: 0.875rem;
+        font-weight: bold;
+        animation: bounce-soft 2s ease-in-out infinite;
+        box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+        transform-style: preserve-3d;
+      }
+
+      /* Hero section specific styling */
+      .hero-content {
+        animation: fadeIn 1s ease-out;
+      }
+
+      .hero-video {
+        animation: videoEntrance 1.2s ease-out 0.3s both;
+      }
+
+      .hero-description {
+        animation: slideUp 0.8s ease-out 0.6s both;
+      }
+
+      .hero-price {
+        animation: scaleIn 0.6s ease-out 0.9s both;
+      }
+
+      .hero-cta {
+        animation: slideUp 0.8s ease-out 1.2s both;
+      }
+
+      /* Social Media Icons */
+      .social-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 1.25rem;
+        margin: 0 0.5rem;
+      }
+
+      .social-icon:hover {
+        transform: translateY(-3px) scale(1.1);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .facebook {
+        background: linear-gradient(135deg, #1877f2, #42a5f5);
+      }
+      .zalo {
+        background: linear-gradient(135deg, #0068ff, #0084ff);
+      }
+      .tiktok {
+        background: linear-gradient(135deg, #000000, #333333);
+      }
+
+      /* Responsive optimizations */
+      @media (max-width: 768px) {
+        .video-container {
+          border-radius: 1rem;
+        }
+        .cta-button {
+          width: 100%;
+          padding: 1.25rem;
+          font-size: 1rem;
+        }
+        /* .elegant-card:hover {
+          transform: translateY(-5px);
+        } */
+        .hero-content h1 {
+          font-size: 2.5rem;
+          line-height: 1.2;
+        }
+        .hero-content p {
+          font-size: 1.125rem;
+        }
+        .gift-description {
+          padding: 1rem;
+        }
+        .gift-description h3 {
+          font-size: 1.5rem;
+        }
+        .product-card {
+          margin-bottom: 1rem;
+        }
+        .order-summary {
+          padding: 1rem;
+        }
+        .social-icon {
+          width: 2.5rem;
+          height: 2.5rem;
+          font-size: 1rem;
+          margin: 0 0.25rem;
+        }
+        .lightbox-content {
+          max-width: 95vw;
+          max-height: 85vh;
+        }
+        .lightbox-close {
+          top: -35px;
+          width: 35px;
+          height: 35px;
+          font-size: 1.25rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-content h1 {
+          font-size: 2rem;
+        }
+        .gift-description h3 {
+          font-size: 1.25rem;
+        }
+        .gift-description h4 {
+          font-size: 1rem;
+        }
+        .elegant-card {
+          padding: 1rem;
+        }
+        .product-card .grid {
+          gap: 1rem;
+        }
+      }
+
+      /* Sticky CTA - Fixed to not cover copyright */
       .sticky-cta {
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
         z-index: 40;
-        background: linear-gradient(135deg, #c9a876 0%, #e8d5b7 100%);
-        box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, #4da6ff 0%, #0066cc 100%);
+        padding: 1rem;
+        box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.15);
+        transform: translateY(100%);
         transition: transform 0.3s ease;
-        max-width: 100vw;
       }
 
-      .floating-cta {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 50;
-      }
-
-      /* Optimized Spacing */
-      .section-spacing {
-        padding: 2.5rem 1rem;
-      }
-
-      @media (min-width: 768px) {
-        .section-spacing {
-          padding: 4rem 1.5rem;
-        }
-      }
-
-      .mobile-hero {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      .mobile-optimized {
-        touch-action: manipulation;
-        -webkit-tap-highlight-color: transparent;
-      }
-
-      .text-balance {
-        text-wrap: balance;
-      }
-
-      /* Smooth Intersection Observer */
-      .intersection-observer {
-        opacity: 0;
-        transform: translateY(15px);
-        transition: all 0.6s ease-out;
-      }
-
-      .intersection-observer.visible {
-        opacity: 1;
+      .sticky-cta.visible {
         transform: translateY(0);
       }
 
-      /* Decorative Elements */
-      .decorative-bg {
-        position: absolute;
-        border-radius: 50%;
-        opacity: 0.05;
-        pointer-events: none;
-      }
-
-      .decorative-bg:nth-child(1) {
-        width: 120px;
-        height: 120px;
-        background: linear-gradient(45deg, #c9a876, #e8d5b7);
-        top: 15%;
-        left: 10%;
-        animation: gentleFloat 6s ease-in-out infinite;
-      }
-
-      .decorative-bg:nth-child(2) {
-        width: 80px;
-        height: 80px;
-        background: linear-gradient(45deg, #d4a574, #f0e6d6);
-        top: 25%;
-        right: 15%;
-        animation: subtleBounce 4s ease-in-out infinite reverse;
-      }
-
-      .decorative-bg:nth-child(3) {
-        width: 100px;
-        height: 100px;
-        background: linear-gradient(45deg, #a0826d, #d4c4b0);
-        bottom: 20%;
-        left: 20%;
-        animation: gentleFloat 5s ease-in-out infinite reverse;
-      }
-
-      /* Product Step Cards */
-      .step-card {
-        background: white;
-        border-radius: 1.5rem;
-        padding: 1.5rem;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
-        border: 1px solid rgba(201, 168, 118, 0.1);
-        transition: all 0.3s ease;
-      }
-
-      .step-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(44, 62, 80, 0.08);
-      }
-
-      .step-number {
-        width: 3rem;
-        height: 3rem;
-        background: linear-gradient(135deg, #c9a876 0%, #e8d5b7 100%);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-weight: bold;
-        font-size: 1.1rem;
-      }
-
-      /* Image Enhancements */
-      .product-image {
-        border-radius: 1.5rem;
-        box-shadow: 0 4px 16px rgba(44, 62, 80, 0.1);
-        transition: all 0.3s ease;
-        max-width: 100%;
-        height: auto;
-      }
-
-      .product-image:hover {
-        transform: scale(1.02);
-        box-shadow: 0 8px 24px rgba(44, 62, 80, 0.15);
-      }
-
-      /* Testimonial Cards */
-      .testimonial-card {
-        background: white;
-        border-radius: 1.5rem;
-        padding: 1.5rem;
-        box-shadow: 0 2px 12px rgba(44, 62, 80, 0.05);
-        border-left: 4px solid #c9a876;
-        transition: all 0.3s ease;
-      }
-
-      .testimonial-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(44, 62, 80, 0.08);
-      }
-
-      /* Why Choose Cards */
-      .feature-card {
-        background: white;
-        border-radius: 1.5rem;
-        padding: 2rem;
-        text-align: center;
-        box-shadow: 0 2px 12px rgba(44, 62, 80, 0.05);
-        border: 1px solid rgba(201, 168, 118, 0.1);
-        transition: all 0.4s ease;
+      /* Ensure footer is always visible */
+      .footer-section {
         position: relative;
-        overflow: hidden;
+        z-index: 50;
+        margin-bottom: 0;
+        padding-bottom: 2rem;
       }
 
-      .feature-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, #c9a876, #e8d5b7);
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
+      /* Mobile-first approach for better performance */
+      .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
 
-      .feature-card:hover::before {
-        transform: scaleX(1);
+      @media (min-width: 640px) {
+        .container {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
       }
 
-      .feature-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 12px 28px rgba(44, 62, 80, 0.1);
-      }
-
-      .feature-icon {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        display: block;
-      }
-
-      /* Responsive Images */
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      /* Grid System Overflow Control */
-      .grid {
-        max-width: 100%;
-      }
-
-      /* Form Elements Width Control */
-      input,
-      textarea,
-      select {
-        max-width: 100%;
-      }
-
-      /* Prevent text overflow */
-      .text-container {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+      @media (min-width: 1024px) {
+        .container {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
       }
     </style>
   </head>
-  <body
-    class="font-modern text-deep-charcoal mobile-optimized overflow-control"
-  >
+  <body class="font-modern text-blue-navy">
+    <!-- Image Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+      <div class="lightbox-content">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img class="lightbox-image" id="lightboxImage" src="/placeholder.svg" alt="" />
+      </div>
+    </div>
+
     <!-- Sticky CTA for Mobile -->
-    <div class="sticky-cta md:hidden p-4">
-      <button
-        onclick="scrollToOrder()"
-        class="w-full text-deep-charcoal font-bold py-3 text-lg rounded-xl"
-      >
-        🎁 Đặt mua ngay - Giảm 20%
+    <div class="sticky-cta md:hidden" id="stickyCTA">
+      <button onclick="scrollToOrder()" class="w-full text-white font-bold py-3 text-lg rounded-xl">
+        🎁 Đặt mua ngay - Tiết kiệm 501K
       </button>
     </div>
 
-    <!-- Hero Section -->
-    <section class="elegant-gradient mobile-hero relative overflow-hidden">
-      <!-- Decorative Background Elements -->
-      <div class="decorative-bg"></div>
-      <div class="decorative-bg"></div>
-      <div class="decorative-bg"></div>
-
-      <div class="container mx-auto px-4 py-8 relative z-10">
-        <div class="text-center space-y-8">
-          <!-- Product Name First -->
-          <div class="space-y-4 intersection-observer">
-            <h1
-              class="font-elegant text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-deep-charcoal text-balance text-container"
-            >
-              <span class="text-muted-gold">🎁 Hộp Quà Tặng</span><br />
-              <span class="text-deep-charcoal">Rexri Creative Line</span>
+    <!-- Hero Section with Video -->
+    <section class="min-h-screen blue-gradient relative overflow-hidden">
+      <div class="container mx-auto px-4 py-8">
+        <div class="text-center space-y-6 md:space-y-8 max-w-6xl mx-auto">
+          <!-- Header -->
+          <div class="hero-content space-y-4">
+            <h1 class="font-elegant text-3xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <span class="text-blue-deep">🎁 Hộp Quà Tặng</span><br />
+              <span class="text-blue-navy">Rexri Creative Line</span>
             </h1>
-            <p
-              class="font-elegant text-lg md:text-xl text-accent-bronze text-container"
-            >
-              Tinh hoa chăm sóc da từ Hàn Quốc
+            <p class="font-elegant text-lg md:text-2xl text-blue-royal px-4">
+              Tinh hoa chăm sóc da từ Hàn Quốc - Bí quyết làn da trẻ trung
             </p>
-          </div>
-
-          <!-- Product Image -->
-          <div class="mb-8 intersection-observer">
-            <div class="animate-gentle-float">
-              <img
-                src="./img/anh-san-pham-1.jpg"
-                alt="Hộp quà tặng Rexri Creative Line"
-                class="product-image mx-auto"
-              />
+            <div class="gift-badge inline-block">
+              🎉 Ưu đãi có hạn - Tặng túi đựng cao cấp trị giá 50.000đ
             </div>
           </div>
 
-          <!-- Value Proposition -->
-          <div
-            class="bg-white bg-opacity-90 backdrop-blur-sm rounded-2xl p-6 mx-auto max-w-md soft-card intersection-observer"
-          >
-            <p
-              class="text-base md:text-lg font-medium text-deep-charcoal mb-2 text-container"
-            >
-              ✨ Bộ sản phẩm chăm sóc da cao cấp
-            </p>
-            <p class="text-sm md:text-base text-accent-bronze text-container">
-              💎 Tặng người thân – Chăm sóc chính mình
-            </p>
+          <!-- Video Hero - Moved to position 2 -->
+          <div class="hero-video">
+            <div class="video-container max-w-4xl mx-auto animate-float">
+              <video autoplay muted loop playsinline poster="./img/rexri-creative-line.jpg">
+                <source src="./img/video-1.mp4" type="video/mp4" />
+                <img
+                  src="./img/rexri-creative-line.jpg"
+                  alt="Hộp quà Rexri Creative Line - Bộ sản phẩm chăm sóc da cao cấp từ Hàn Quốc"
+                  class="w-full h-auto"
+                />
+              </video>
+              <div class="video-overlay"></div>
+            </div>
           </div>
 
-          <!-- Urgency Banner -->
-          <div
-            class="charcoal-gradient text-warm-ivory rounded-2xl p-4 mx-auto max-w-sm animate-soft-pulse intersection-observer"
-          >
-            <p class="text-lg font-semibold text-center mb-1 text-container">
-              ✅ Ưu đãi đặc biệt: Giảm 20%
-            </p>
-            <p class="text-center text-soft-gold text-sm text-container">
-              ⚠️ Số lượng có hạn
-            </p>
+          <!-- Gift Box Description - Moved to position 3 -->
+          <div class="hero-description">
+            <div class="gift-description max-w-4xl mx-auto">
+              <h2 class="font-elegant text-xl md:text-3xl font-bold text-blue-navy mb-4">
+                ✨ Hộp Quà Hoàn Hảo - 6 Sản Phẩm Trong 1 Bộ
+              </h2>
+              <div class="grid md:grid-cols-2 gap-4 md:gap-6 text-left">
+                <div class="space-y-3">
+                  <h3 class="font-semibold text-blue-royal text-base md:text-lg">
+                    🏠 3 Sản Phẩm Full Size - Dùng Thoải Mái Tại Nhà:
+                  </h3>
+                  <ul class="space-y-2 text-blue-navy text-sm md:text-base">
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">✓</span> Rexri Creative Toner (120ml) -
+                      Làm sạch sâu
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">✓</span> Rexri Creative Serum (50ml) -
+                      Phục hồi da
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">✓</span> Rexri Creative Cream (50ml) -
+                      Dưỡng ẩm sâu
+                    </li>
+                  </ul>
+                </div>
+                <div class="space-y-3">
+                  <h3 class="font-semibold text-blue-royal text-base md:text-lg">
+                    ✈️ 3 Sản Phẩm Mini Size - Thuận Tiện Mang Theo:
+                  </h3>
+                  <ul class="space-y-2 text-blue-navy text-sm md:text-base">
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">✓</span> Mini Toner (30ml) - Du lịch, công
+                      tác
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">✓</span> Mini Serum (15ml) - Bỏ túi xách
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">✓</span> Mini Cream (15ml) - Chăm sóc mọi
+                      lúc
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-center mt-4 text-blue-royal font-semibold text-sm md:text-base">
+                💝 Hoàn hảo cho việc sử dụng hàng ngày và mang theo bên mình!
+              </p>
+            </div>
           </div>
 
-          <!-- Primary CTA -->
-          <button
-            onclick="scrollToOrder()"
-            class="cta-button w-full max-w-sm mx-auto text-deep-charcoal font-bold py-4 px-8 rounded-2xl text-lg intersection-observer"
-          >
-            👉 Đặt mua ngay
-          </button>
+          <!-- Price Section - Updated pricing -->
+          <div class="hero-price">
+            <div class="elegant-card p-6 md:p-8 max-w-md mx-auto animate-pulse-elegant">
+              <div class="space-y-4">
+                <p class="text-base md:text-lg">
+                  Giá gốc: <span class="price-original text-xl md:text-2xl">1.800.000đ</span>
+                </p>
+                <p class="text-3xl md:text-5xl price-sale font-elegant">1.299.000đ</p>
+                <p class="text-blue-royal">
+                  Tiết kiệm ngay: <span class="font-bold text-blue-deep">501.000đ</span>
+                </p>
+                <div class="bg-cream-luxury p-3 rounded-xl border border-gold-accent">
+                  <p class="text-sm font-semibold text-blue-navy">
+                    🎁 Tặng kèm túi đựng hộp quà cao cấp trị giá 50.000đ
+                  </p>
+                </div>
+                <div class="bg-blue-deep text-white p-3 rounded-xl font-semibold">
+                  ⚠️ Chỉ còn 47 hộp với giá ưu đãi này!
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <!-- Trust Indicators -->
-          <div
-            class="flex justify-center items-center space-x-2 md:space-x-4 text-xs md:text-sm text-accent-bronze intersection-observer flex-wrap"
-          >
-            <span class="gentle-card px-3 py-1 rounded-full mb-2"
-              >✅ Hàng chính hãng</span
-            >
-            <span class="gentle-card px-3 py-1 rounded-full mb-2"
-              >✅ Miễn phí ship</span
-            >
-            <span class="gentle-card px-3 py-1 rounded-full mb-2"
-              >✅ Đổi trả dễ dàng</span
-            >
+          <!-- CTA Button -->
+          <div class="hero-cta">
+            <button onclick="scrollToOrder()" class="cta-button text-lg md:text-xl">
+              🛒 Đặt mua ngay - Tiết kiệm 501K
+            </button>
+            <p class="text-sm text-blue-royal mt-2">✅ Miễn phí vận chuyển toàn quốc</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Product Details Section - Moved Up -->
-    <section class="section-spacing bg-cream-beige overflow-hidden">
+    <!-- Product Details Section with Integrated Layout -->
+    <section class="py-12 md:py-16 pearl-gradient">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-12 intersection-observer">
-          <h2
-            class="font-elegant text-2xl md:text-4xl font-bold text-deep-charcoal mb-4 text-container"
-          >
-            📦 Bộ sản phẩm 3 trong 1
+        <div class="text-center mb-8 md:mb-12 fade-in-section">
+          <h2 class="font-elegant text-2xl md:text-5xl font-bold text-blue-navy mb-4 md:mb-6">
+            📦 Bộ sản phẩm chăm sóc da hoàn chỉnh 3 trong 1
           </h2>
-          <p class="text-accent-bronze text-lg text-container">
-            Quy trình chăm sóc da hoàn chỉnh từ Hàn Quốc
+          <p class="text-blue-royal text-lg md:text-xl">
+            Quy trình chăm sóc da khoa học từ Hàn Quốc
           </p>
         </div>
 
-        <!-- Product Steps -->
-        <div class="space-y-6 max-w-4xl mx-auto">
-          <!-- Step 1 -->
-          <div class="step-card intersection-observer">
-            <div class="flex items-start space-x-4 md:space-x-6">
-              <div class="flex-shrink-0">
-                <div class="step-number animate-subtle-bounce">1</div>
+        <!-- Integrated Product Grid -->
+        <div class="space-y-8 md:space-y-12 max-w-6xl mx-auto">
+          <!-- Product 1 - Toner -->
+          <div class="product-card fade-in-section">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8 p-6 md:p-8 items-center">
+              <div class="space-y-4 md:space-y-6">
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 md:w-16 md:h-16 bg-blue-elegant rounded-full flex items-center justify-center text-2xl md:text-3xl"
+                  >
+                    🌸
+                  </div>
+                  <div>
+                    <h3 class="font-elegant text-xl md:text-2xl font-bold text-blue-navy">
+                      Rexri Creative Toner
+                    </h3>
+                    <p class="text-blue-royal text-sm md:text-base">Bước 1: Làm sạch & Cấp ẩm</p>
+                  </div>
+                </div>
+                <p class="text-blue-navy leading-relaxed text-sm md:text-base">
+                  Làm sạch sâu, loại bỏ tế bào chết và cung cấp độ ẩm tự nhiên cho da. Công thức đặc
+                  biệt từ chiết xuất táo tàu tươi và 15+ thảo dược Đông y quý hiếm.
+                </p>
+                <div class="bg-blue-elegant p-3 md:p-4 rounded-xl">
+                  <p class="font-semibold text-sm mb-3 text-blue-navy">Thành phần quý hiếm:</p>
+                  <ul class="text-xs md:text-sm space-y-2 text-blue-royal">
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">•</span> Chiết xuất táo tàu tươi từ Hàn
+                      Quốc
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">•</span> 15+ thảo dược Đông y quý hiếm
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">•</span> Acid hyaluronic phân tử nhỏ
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="flex-1 min-w-0">
-                <h3
-                  class="font-semibold text-deep-charcoal text-xl mb-3 text-container"
-                >
-                  🌸 Rexri Creative Toner
-                </h3>
-              </div>
-            </div>
-
-            <div>
-              <p class="text-accent-bronze mb-4 text-container">
-                Làm sạch sâu, loại bỏ tế bào chết và cung cấp độ ẩm tự nhiên cho
-                da
-              </p>
-              <div class="bg-pale-rose rounded-xl p-4">
-                <h4 class="font-medium text-deep-charcoal mb-2 text-container">
-                  Thành phần chính:
-                </h4>
-                <ul class="text-sm text-accent-bronze space-y-1">
-                  <li class="text-container">• Chiết xuất táo tàu tươi</li>
-                  <li class="text-container">• Thảo dược Đông y quý hiếm</li>
-                  <li class="text-container">• Acid hyaluronic tự nhiên</li>
-                </ul>
+              <div
+                class="product-image-container"
+                onclick="openLightbox('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/anh-san-pham-1.jpg-9gNYRS8znqq0tIh1nyVVLBpNCeuYEr.jpeg', 'Rexri Creative Toner - Sản phẩm làm sạch và cấp ẩm cho da')"
+              >
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/anh-san-pham-1.jpg-9gNYRS8znqq0tIh1nyVVLBpNCeuYEr.jpeg"
+                  alt="Rexri Creative Toner - Sản phẩm làm sạch và cấp ẩm cho da từ Hàn Quốc"
+                  class="w-full h-auto shadow-lg rounded-xl"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
 
-          <!-- Step 2 -->
-          <div class="step-card intersection-observer">
-            <div class="flex items-start space-x-4 md:space-x-6">
-              <div class="flex-shrink-0">
-                <div
-                  class="step-number animate-subtle-bounce"
-                  style="animation-delay: 0.2s"
-                >
-                  2
+          <!-- Product 2 - Serum -->
+          <div class="product-card fade-in-section">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8 p-6 md:p-8 items-center">
+              <div
+                class="product-image-container md:order-1"
+                onclick="openLightbox('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/anh-san-pham-2.jpg-7DsE8oZYlFEB5MhcNzsOGDQfOxvN4t.jpeg', 'Rexri Creative Serum - Serum làm sáng và phục hồi da')"
+              >
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/anh-san-pham-2.jpg-7DsE8oZYlFEB5MhcNzsOGDQfOxvN4t.jpeg"
+                  alt="Rexri Creative Serum - Serum làm sáng và phục hồi da chống lão hóa"
+                  class="w-full h-auto shadow-lg rounded-xl"
+                  loading="lazy"
+                />
+              </div>
+              <div class="space-y-4 md:space-y-6 md:order-2">
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 md:w-16 md:h-16 bg-blue-elegant rounded-full flex items-center justify-center text-2xl md:text-3xl"
+                  >
+                    ✨
+                  </div>
+                  <div>
+                    <h3 class="font-elegant text-xl md:text-2xl font-bold text-blue-navy">
+                      Rexri Creative Serum
+                    </h3>
+                    <p class="text-blue-royal text-sm md:text-base">Bước 2: Làm sáng & Phục hồi</p>
+                  </div>
                 </div>
-              </div>
-              <div class="flex-1 min-w-0">
-                <h3
-                  class="font-semibold text-deep-charcoal text-xl mb-3 text-container"
-                >
-                  ✨ Rexri Creative Serum
-                </h3>
-              </div>
-            </div>
-
-            <div>
-              <p class="text-accent-bronze mb-4 text-container">
-                Làm sáng da, cải thiện nếp nhăn và phục hồi độ đàn hồi tự nhiên
-              </p>
-              <div class="bg-pale-rose rounded-xl p-4">
-                <h4 class="font-medium text-deep-charcoal mb-2 text-container">
-                  Thành phần chính:
-                </h4>
-                <ul class="text-sm text-accent-bronze space-y-1">
-                  <li class="text-container">• Chiết xuất hạt óc chó</li>
-                  <li class="text-container">• Eucommia ulmoides</li>
-                  <li class="text-container">• Peptide chống lão hóa</li>
-                </ul>
+                <p class="text-blue-navy leading-relaxed text-sm md:text-base">
+                  Làm sáng da, cải thiện nếp nhăn và phục hồi độ đàn hồi tự nhiên. Chứa chiết xuất
+                  hạt óc chó cao cấp và peptide chống lão hóa thế hệ mới.
+                </p>
+                <div class="bg-blue-elegant p-3 md:p-4 rounded-xl">
+                  <p class="font-semibold text-sm mb-3 text-blue-navy">Công thức độc quyền:</p>
+                  <ul class="text-xs md:text-sm space-y-2 text-blue-royal">
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">•</span> Chiết xuất hạt óc chó cao cấp
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">•</span> Eucommia ulmoides quý hiếm
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">•</span> Peptide chống lão hóa thế hệ mới
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Step 3 -->
-          <div class="step-card intersection-observer">
-            <div class="flex items-start space-x-4 md:space-x-6">
-              <div class="flex-shrink-0">
-                <div
-                  class="step-number animate-subtle-bounce"
-                  style="animation-delay: 0.4s"
-                >
-                  3
+          <!-- Product 3 - Cream -->
+          <div class="product-card fade-in-section">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8 p-6 md:p-8 items-center">
+              <div class="space-y-4 md:space-y-6">
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 md:w-16 md:h-16 bg-blue-elegant rounded-full flex items-center justify-center text-2xl md:text-3xl"
+                  >
+                    🌿
+                  </div>
+                  <div>
+                    <h3 class="font-elegant text-xl md:text-2xl font-bold text-blue-navy">
+                      Rexri Creative Cream
+                    </h3>
+                    <p class="text-blue-royal text-sm md:text-base">Bước 3: Dưỡng ẩm & Bảo vệ</p>
+                  </div>
+                </div>
+                <p class="text-blue-navy leading-relaxed text-sm md:text-base">
+                  Dưỡng ẩm sâu, chống lão hóa và bảo vệ da khỏi tác hại môi trường. Chứa nước nấm
+                  dược liệu quý hiếm và 8 loại nấm quý từ núi cao Hàn Quốc.
+                </p>
+                <div class="bg-blue-elegant p-3 md:p-4 rounded-xl">
+                  <p class="font-semibold text-sm mb-3 text-blue-navy">Tinh chất thiên nhiên:</p>
+                  <ul class="text-xs md:text-sm space-y-2 text-blue-royal">
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">•</span> Nước nấm dược liệu quý hiếm
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">•</span> 8 loại nấm quý từ núi cao Hàn
+                      Quốc
+                    </li>
+                    <li class="flex items-center">
+                      <span class="text-gold-accent mr-2">•</span> Collagen thực vật cao cấp
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="flex-1 min-w-0">
-                <h3
-                  class="font-semibold text-deep-charcoal text-xl mb-3 text-container"
-                >
-                  🌿 Rexri Creative Cream
-                </h3>
-              </div>
-            </div>
-            <div>
-              <p class="text-accent-bronze mb-4 text-container">
-                Dưỡng ẩm sâu, chống lão hóa và bảo vệ da khỏi tác hại môi trường
-              </p>
-              <div class="bg-pale-rose rounded-xl p-4">
-                <h4 class="font-medium text-deep-charcoal mb-2 text-container">
-                  Thành phần chính:
-                </h4>
-                <ul class="text-sm text-accent-bronze space-y-1">
-                  <li class="text-container">• Nước nấm dược liệu</li>
-                  <li class="text-container">• 8 loại nấm quý hiếm</li>
-                  <li class="text-container">• Collagen thực vật</li>
-                </ul>
+              <div
+                class="product-image-container"
+                onclick="openLightbox('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/anh-san-pham-3.jpg-qr3Jw6tgWIgR6UupQZ8shoJYKEFANs.jpeg', 'Rexri Creative Cream - Kem dưỡng ẩm và bảo vệ da')"
+              >
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/anh-san-pham-3.jpg-qr3Jw6tgWIgR6UupQZ8shoJYKEFANs.jpeg"
+                  alt="Rexri Creative Cream - Kem dưỡng ẩm sâu và bảo vệ da khỏi lão hóa"
+                  class="w-full h-auto shadow-lg rounded-xl"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -682,513 +1112,471 @@
 
         <!-- Product Images Gallery -->
         <div
-          class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-12 max-w-4xl mx-auto intersection-observer"
+          class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto mt-12 md:mt-16 fade-in-section"
         >
-          <div class="col-span-2 md:col-span-1">
+          <div
+            class="product-image-container"
+            onclick="openLightbox('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gift-box-rexri.jpg-t4QdYCOFXOZB2oiN89apDsvEptvzcw.jpeg', 'Gift box Rexri Creative Line - Hộp quà tặng cao cấp')"
+          >
             <img
-              src="./img/anh-san-pham-3.jpg"
-              alt="Rexri Gift Box"
-              class="product-image w-full h-auto"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gift-box-rexri.jpg-t4QdYCOFXOZB2oiN89apDsvEptvzcw.jpeg"
+              alt="Gift box Rexri Creative Line - Hộp quà tặng cao cấp với bao bì sang trọng"
+              class="w-full h-auto shadow-lg rounded-xl"
+              loading="lazy"
             />
           </div>
-          <div>
+          <div
+            class="product-image-container"
+            onclick="openLightbox('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rexri-line-3-set.jpg-fHOSY0c9HBdaqvzW0tku3Hvxw41LO9.jpeg', 'Rexri Line 3 Set - Bộ sản phẩm chăm sóc da hoàn chỉnh')"
+          >
             <img
-              src="./img/anh-san-pham-2.jpg"
-              alt="Rexri Products"
-              class="product-image w-full h-auto"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rexri-line-3-set.jpg-fHOSY0c9HBdaqvzW0tku3Hvxw41LO9.jpeg"
+              alt="Rexri Line 3 Set - Bộ sản phẩm chăm sóc da hoàn chỉnh từ Hàn Quốc"
+              class="w-full h-auto shadow-lg rounded-xl"
+              loading="lazy"
             />
           </div>
-          <div>
+          <div
+            class="product-image-container md:col-span-1 col-span-2"
+            onclick="openLightbox('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rexri-creative-line.jpg-8xeGcLv9APV1QBDPmoNB8CJ6vD2WwT.jpeg', 'Rexri Creative Line - Bộ sản phẩm chăm sóc da hoàn chỉnh')"
+          >
             <img
-              src="./img/gift-box-rexri.jpg"
-              alt="Rexri Creative Line"
-              class="product-image w-full h-auto"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rexri-creative-line.jpg-8xeGcLv9APV1QBDPmoNB8CJ6vD2WwT.jpeg"
+              alt="Rexri Creative Line hoàn chỉnh - Bộ sản phẩm chăm sóc da cao cấp từ Hàn Quốc"
+              class="w-full h-auto shadow-lg rounded-xl"
+              loading="lazy"
             />
           </div>
         </div>
 
         <!-- CTA in Product Section -->
-        <div class="text-center mt-12 intersection-observer">
-          <button
-            onclick="scrollToOrder()"
-            class="cta-button text-deep-charcoal font-bold py-4 px-8 rounded-xl text-lg"
-          >
-            Đặt mua bộ sản phẩm hoàn chỉnh 👇
+        <div class="text-center mt-8 md:mt-12 fade-in-section">
+          <button onclick="scrollToOrder()" class="cta-button text-base md:text-lg">
+            Sở hữu ngay bộ sản phẩm hoàn chỉnh 👇
           </button>
         </div>
       </div>
     </section>
 
-    <!-- Why Choose Section - Moved After Product Details -->
-    <section class="section-spacing bg-warm-ivory overflow-hidden">
+    <!-- Thank You Card Section -->
+    <section class="py-12 md:py-16 luxury-gradient">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-12 intersection-observer">
-          <h2
-            class="font-elegant text-2xl md:text-4xl font-bold text-deep-charcoal mb-6 text-container"
-          >
-            🌟 Tại sao chọn Rexri Creative?
+        <div class="max-w-4xl mx-auto fade-in-section">
+          <div class="elegant-card p-6 md:p-8 text-center">
+            <h3 class="font-elegant text-xl md:text-3xl font-bold mb-4 md:mb-6 text-blue-navy">
+              💌 Thiệp cảm ơn đặc biệt từ Mỹ Phẩm & Dược Mỹ Phẩm Bác sĩ Thu Tuyết
+            </h3>
+            <div class="bg-silver-light p-4 md:p-6 rounded-2xl">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/thiep-cam-on-W0Q1pEJVpIZt7C8SflstxOZn2vfocx.png"
+                alt="Thiệp cảm ơn chân thành từ Mỹ Phẩm & Dược Mỹ Phẩm Bác sĩ Thu Tuyết"
+                class="w-full max-w-2xl mx-auto rounded-xl shadow-lg cursor-pointer"
+                onclick="openLightbox('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/thiep-cam-on-W0Q1pEJVpIZt7C8SflstxOZn2vfocx.png', 'Thiệp cảm ơn từ Mỹ Phẩm & Dược Mỹ Phẩm Bác sĩ Thu Tuyết')"
+                loading="lazy"
+              />
+            </div>
+            <p class="mt-4 text-blue-royal text-sm md:text-base">
+              Mỗi hộp quà đều đi kèm thiệp cảm ơn chân thành từ Mỹ Phẩm & Dược Mỹ Phẩm Bác sĩ Thu
+              Tuyết -
+              <span class="font-semibold"
+                >đơn vị phân phối độc quyền sản phẩm exri Creative Line tại Việt Nam</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="py-12 md:py-16 blue-gradient">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8 md:mb-12 fade-in-section">
+          <h2 class="font-elegant text-2xl md:text-5xl font-bold text-blue-navy mb-4 md:mb-6">
+            ❤️ Khách hàng nói gì về Rexri Creative?
           </h2>
-          <p class="text-accent-bronze text-lg text-container">
-            Khám phá những ưu điểm vượt trội
+          <p class="text-blue-royal text-lg md:text-xl">
+            Hơn 10.000 khách hàng tin tưởng và hài lòng
           </p>
         </div>
 
-        <!-- Feature Cards Grid -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
-        >
-          <!-- Feature 1 -->
-          <div class="feature-card intersection-observer">
-            <span class="feature-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="Hàn Quốc" style="width:2.5rem;height:2.5rem;display:inline-block;vertical-align:middle;border-radius:50%;box-shadow:0 2px 8px rgba(44,62,80,0.08);" loading="lazy" />
-            </span></span>
-            <h3
-              class="font-semibold text-deep-charcoal text-lg mb-3 text-container"
-            >
-              Xuất xứ Hàn Quốc
-            </h3>
-            <p
-              class="text-accent-bronze text-sm leading-relaxed text-container"
-            >
-              Công thức độc quyền kết hợp y học cổ truyền Đông y với công nghệ
-              hiện đại từ Hàn Quốc
+        <div class="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+          <!-- Testimonial 1 -->
+          <div class="elegant-card p-4 md:p-6 fade-in-section">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden mr-3 md:mr-4 flex-shrink-0"
+              >
+                <img
+                  src="./img/chi-huong.jpg"
+                  alt="Chị Hương - Khách hàng hài lòng với sản phẩm Rexri"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h4 class="font-semibold text-blue-navy text-sm md:text-base">Chị Hương Tr.</h4>
+                <p class="text-xs md:text-sm text-blue-royal">Hà Nội - 35 tuổi</p>
+                <div class="flex text-gold-accent text-xs md:text-sm mt-1">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <p class="text-blue-navy leading-relaxed italic text-sm md:text-base">
+              "Tôi tặng cho mẹ nhân dịp sinh nhật 60 tuổi. Mẹ rất thích vì sản phẩm dịu nhẹ mà hiệu
+              quả rõ rệt. Làn da mẹ đã cải thiện đáng kể sau 2 tuần sử dụng, mịn màng và sáng hơn
+              hẳn."
             </p>
           </div>
 
-          <!-- Feature 2 -->
-          <div class="feature-card intersection-observer">
-            <span class="feature-icon">🌿</span>
-            <h3
-              class="font-semibold text-deep-charcoal text-lg mb-3 text-container"
-            >
-              Thành phần tự nhiên
-            </h3>
-            <p
-              class="text-accent-bronze text-sm leading-relaxed text-container"
-            >
-              Chiết xuất từ 30+ thành phần thảo dược quý hiếm, an toàn cho mọi
-              loại da kể cả da nhạy cảm
+          <!-- Testimonial 2 -->
+          <div class="elegant-card p-4 md:p-6 fade-in-section">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden mr-3 md:mr-4 flex-shrink-0"
+              >
+                <img
+                  src="./img/chi-linh.webp"
+                  alt="Chị Linh - Khách hàng hài lòng với sản phẩm Rexri"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h4 class="font-semibold text-blue-navy text-sm md:text-base">Chị Ngọc A.</h4>
+                <p class="text-xs md:text-sm text-blue-royal">TP.HCM - 28 tuổi</p>
+                <div class="flex text-gold-accent text-xs md:text-sm mt-1">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <p class="text-blue-navy leading-relaxed italic text-sm md:text-base">
+              "Sản phẩm thật sự tuyệt vời! Làn da mình đã cải thiện rất nhiều, đặc biệt là vùng
+              quanh mắt. Hộp quà cũng rất xinh và ý nghĩa. Đây là lần thứ 3 mình mua để tặng bạn
+              bè."
             </p>
           </div>
 
-          <!-- Feature 3 -->
-          <div class="feature-card intersection-observer">
-            <span class="feature-icon">🎁</span>
-            <h3
-              class="font-semibold text-deep-charcoal text-lg mb-3 text-container"
-            >
-              Bao bì sang trọng
-            </h3>
-            <p
-              class="text-accent-bronze text-sm leading-relaxed text-container"
-            >
-              Hộp quà velvet đỏ cao cấp, thiết kế tinh tế, sẵn sàng làm món quà
-              ý nghĩa
+          <!-- Testimonial 3 -->
+          <div class="elegant-card p-4 md:p-6 fade-in-section">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden mr-3 md:mr-4 flex-shrink-0"
+              >
+                <img
+                  src="./img/chi-ngoc.webp"
+                  alt="Chị Ngọc - Khách hàng hài lòng với sản phẩm Rexri"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h4 class="font-semibold text-blue-navy text-sm md:text-base">Chị Mai L.</h4>
+                <p class="text-xs md:text-sm text-blue-royal">Đà Nẵng - 42 tuổi</p>
+                <div class="flex text-gold-accent text-xs md:text-sm mt-1">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <p class="text-blue-navy leading-relaxed italic text-sm md:text-base">
+              "Mình đã thử nhiều sản phẩm chăm sóc da khác nhưng chỉ có Rexri mới cho hiệu quả như
+              mong đợi. Da mịn màng, sáng hơn hẳn và quan trọng là không bị kích ứng."
             </p>
           </div>
 
-          <!-- Feature 4 -->
-          <div class="feature-card intersection-observer">
-            <span class="feature-icon">✨</span>
-            <h3
-              class="font-semibold text-deep-charcoal text-lg mb-3 text-container"
-            >
-              Hiệu quả rõ rệt
+          <!-- Testimonial 4 -->
+          <div class="elegant-card p-4 md:p-6 fade-in-section">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden mr-3 md:mr-4 flex-shrink-0"
+              >
+                <img
+                  src="./img/chi-mai.jpg"
+                  alt="Chị Mai - Khách hàng hài lòng với sản phẩm Rexri"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h4 class="font-semibold text-blue-navy text-sm md:text-base">Chị Linh P.</h4>
+                <p class="text-xs md:text-sm text-blue-royal">Cần Thơ - 38 tuổi</p>
+                <div class="flex text-gold-accent text-xs md:text-sm mt-1">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <p class="text-blue-navy leading-relaxed italic text-sm md:text-base">
+              "Giao hàng nhanh chóng, bao bì đẹp sang trọng, sản phẩm chất lượng vượt mong đợi. Đây
+              là lần thứ 4 mình mua để tặng người thân trong gia đình."
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA in Reviews Section -->
+        <div class="text-center mt-8 md:mt-12 fade-in-section">
+          <button onclick="scrollToOrder()" class="cta-button text-base md:text-lg">
+            Tôi cũng muốn trải nghiệm ngay 👇
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="py-12 md:py-16 pearl-gradient">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8 md:mb-12 fade-in-section">
+          <h2 class="font-elegant text-2xl md:text-5xl font-bold text-blue-navy mb-4 md:mb-6">
+            🌟 Tại sao hơn 10.000 khách hàng chọn Rexri Creative?
+          </h2>
+          <p class="text-blue-royal text-lg md:text-xl">
+            6 lý do khiến Rexri Creative trở thành lựa chọn hàng đầu
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+          <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
+            <div class="text-3xl md:text-4xl mb-4">🇰🇷</div>
+            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+              Xuất xứ Hàn Quốc chính hãng
             </h3>
-            <p
-              class="text-accent-bronze text-sm leading-relaxed text-container"
-            >
-              Da sáng mịn, giảm nếp nhăn, cải thiện độ đàn hồi chỉ sau 2 tuần sử
-              dụng
+            <p class="text-blue-royal text-sm">
+              Công thức độc quyền kết hợp y học cổ truyền Đông y với công nghệ hiện đại từ Hàn Quốc
             </p>
           </div>
 
-          <!-- Feature 5 -->
-          <div class="feature-card intersection-observer">
-            <span class="feature-icon">👩‍⚕️</span>
-            <h3
-              class="font-semibold text-deep-charcoal text-lg mb-3 text-container"
-            >
-              Chuyên gia khuyên dùng
+          <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
+            <div class="text-3xl md:text-4xl mb-4">🌿</div>
+            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+              100% thành phần tự nhiên
             </h3>
-            <p
-              class="text-accent-bronze text-sm leading-relaxed text-container"
-            >
-              Được phân phối độc quyền bởi Mỹ Phẩm & Dược Mỹ Phẩm Bác Sĩ Thu
-              Tuyết
+            <p class="text-blue-royal text-sm">
+              Chiết xuất từ 30+ thảo dược quý hiếm, không chứa hóa chất độc hại, an toàn cho mọi
+              loại da
             </p>
           </div>
 
-          <!-- Feature 6 -->
-          <div class="feature-card intersection-observer">
-            <span class="feature-icon">🛡️</span>
-            <h3
-              class="font-semibold text-deep-charcoal text-lg mb-3 text-container"
-            >
-              Cam kết chất lượng
+          <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
+            <div class="text-3xl md:text-4xl mb-4">🎁</div>
+            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+              Bao bì sang trọng cao cấp
             </h3>
-            <p
-              class="text-accent-bronze text-sm leading-relaxed text-container"
-            >
+            <p class="text-blue-royal text-sm">
+              Hộp quà velvet đỏ cao cấp, thiết kế tinh tế, sẵn sàng làm món quà ý nghĩa cho người
+              thân
+            </p>
+          </div>
+
+          <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
+            <div class="text-3xl md:text-4xl mb-4">✨</div>
+            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+              Hiệu quả rõ rệt sau 2 tuần
+            </h3>
+            <p class="text-blue-royal text-sm">
+              Da sáng mịn, giảm nếp nhăn, cải thiện độ đàn hồi và làm chậm quá trình lão hóa
+            </p>
+          </div>
+
+          <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
+            <div class="text-3xl md:text-4xl mb-4">👩‍⚕️</div>
+            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+              Chuyên gia da liễu khuyên dùng
+            </h3>
+            <p class="text-blue-royal text-sm">
+              Được phân phối độc quyền bởi Mỹ Phẩm & Dược Mỹ Phẩm Bác Sĩ Thu Tuyết - đơn vị phân
+              phối độc quyền sản phẩm Rexri Creative Line tại Việt Nam
+            </p>
+          </div>
+
+          <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
+            <div class="text-3xl md:text-4xl mb-4">🛡️</div>
+            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+              Cam kết chất lượng 100%
+            </h3>
+            <p class="text-blue-royal text-sm">
               Đổi trả miễn phí nếu không hài lòng trong 30 ngày đầu sử dụng
             </p>
           </div>
         </div>
 
         <!-- CTA in Why Choose Section -->
-        <div class="text-center mt-12 intersection-observer">
-          <button
-            onclick="scrollToOrder()"
-            class="cta-button text-deep-charcoal font-bold py-4 px-12 rounded-2xl text-lg"
-          >
-            🎯 Tôi muốn sở hữu ngay
+        <div class="text-center mt-8 md:mt-12 fade-in-section">
+          <button onclick="scrollToOrder()" class="cta-button text-base md:text-lg">
+            🎯 Tôi muốn sở hữu ngay bộ sản phẩm này
           </button>
         </div>
       </div>
     </section>
 
-    <!-- Social Proof Section -->
-    <section class="section-spacing bg-cream-beige overflow-hidden">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12 intersection-observer">
-          <h2
-            class="font-elegant text-2xl md:text-4xl font-bold text-deep-charcoal mb-4 text-container"
-          >
-            ❤️ Khách hàng nói gì?
-          </h2>
-          <p class="text-accent-bronze text-container">
-            Hơn 10,000 khách hàng tin tưởng và hài lòng
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div class="testimonial-card intersection-observer">
-            <div class="flex items-center mb-4">
-              <div
-                class="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center mr-4 flex-shrink-0"
-              >
-                <img
-                  src="./img/chi-huong.jpg"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-
-              <div class="min-w-0">
-                <h4 class="font-semibold text-deep-charcoal text-container">
-                  Hương Tr.
-                </h4>
-                <p class="text-sm text-accent-bronze text-container">Hà Nội</p>
-                <div class="flex text-muted-gold text-sm mt-1">⭐⭐⭐⭐⭐</div>
-              </div>
-            </div>
-            <p class="text-deep-charcoal leading-relaxed italic text-container">
-              "Tôi tặng cho mẹ nhân dịp sinh nhật, mẹ rất thích vì sản phẩm dịu
-              nhẹ mà hiệu quả rõ rệt. Làn da mẹ đã cải thiện nhiều sau 2 tuần sử
-              dụng."
-            </p>
-          </div>
-
-          <div class="testimonial-card intersection-observer">
-            <div class="flex items-center mb-4">
-              <div
-                class="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center mr-4 flex-shrink-0"
-              >
-                <img
-                  src="./img/chi-linh.webp"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-
-              <div class="min-w-0">
-                <h4 class="font-semibold text-deep-charcoal text-container">
-                  Ngọc A.
-                </h4>
-                <p class="text-sm text-accent-bronze text-container">
-                  Hồ Chí Minh
-                </p>
-                <div class="flex text-muted-gold text-sm mt-1">⭐⭐⭐⭐⭐</div>
-              </div>
-            </div>
-            <p class="text-deep-charcoal leading-relaxed italic text-container">
-              "Sản phẩm thật sự tuyệt vời! Làn da mình đã cải thiện rất nhiều.
-              Hộp quà cũng rất xinh và ý nghĩa! Sẽ tiếp tục ủng hộ."
-            </p>
-          </div>
-
-          <div class="testimonial-card intersection-observer">
-            <div class="flex items-center mb-4">
-              <div
-                class="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center mr-4 flex-shrink-0"
-              >
-                <img
-                  src="./img/chi-ngoc.webp"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-
-              <div class="min-w-0">
-                <h4 class="font-semibold text-deep-charcoal text-container">
-                  Mai L.
-                </h4>
-                <p class="text-sm text-accent-bronze text-container">Đà Nẵng</p>
-                <div class="flex text-muted-gold text-sm mt-1">⭐⭐⭐⭐⭐</div>
-              </div>
-            </div>
-            <p class="text-deep-charcoal leading-relaxed italic text-container">
-              "Mình đã dùng nhiều sản phẩm khác nhưng chỉ có Rexri mới cho hiệu
-              quả như mong đợi. Da mịn màng và sáng hơn hẳn."
-            </p>
-          </div>
-
-          <div class="testimonial-card intersection-observer">
-            <div class="flex items-center mb-4">
-              <div
-                class="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center mr-4 flex-shrink-0"
-              >
-                <img
-                  src="./img/chi-mai.jpg"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-
-              <div class="min-w-0">
-                <h4 class="font-semibold text-deep-charcoal text-container">
-                  Linh P.
-                </h4>
-                <p class="text-sm text-accent-bronze text-container">Cần Thơ</p>
-                <div class="flex text-muted-gold text-sm mt-1">⭐⭐⭐⭐⭐</div>
-              </div>
-            </div>
-            <p class="text-deep-charcoal leading-relaxed italic text-container">
-              "Giao hàng nhanh, bao bì đẹp, sản phẩm chất lượng. Đây là lần thứ
-              3 mình mua để tặng bạn bè."
-            </p>
-          </div>
-        </div>
-
-        <!-- CTA in Social Proof -->
-        <div class="text-center mt-12 intersection-observer">
-          <button
-            onclick="scrollToOrder()"
-            class="cta-button text-deep-charcoal font-bold py-3 px-8 rounded-xl text-base"
-          >
-            Tôi cũng muốn thử ngay 👇
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Offer Section -->
-    <section
-      class="section-spacing charcoal-gradient text-warm-ivory overflow-hidden"
-    >
+    <!-- Special Offer Section -->
+    <section class="py-12 md:py-16 blue-deep-gradient text-pearl-white">
       <div class="container mx-auto px-4 text-center">
-        <div class="max-w-3xl mx-auto">
-          <div class="intersection-observer mb-8">
-            <h2
-              class="font-elegant text-3xl md:text-5xl font-bold mb-4 text-container"
-            >
-              🎉 Ưu đãi đặc biệt
+        <div class="max-w-4xl mx-auto">
+          <div class="fade-in-section mb-6 md:mb-8">
+            <h2 class="font-elegant text-2xl md:text-5xl font-bold mb-4">
+              🎉 Ưu đãi đặc biệt chỉ hôm nay
             </h2>
-            <p class="text-soft-gold text-lg text-container">
-              Cơ hội không thể bỏ lỡ - Số lượng có hạn
+            <p class="text-blue-soft text-lg md:text-xl">
+              Cơ hội vàng không thể bỏ lỡ - Số lượng có hạn
             </p>
           </div>
 
-          <!-- Price Display -->
+          <!-- Price Comparison -->
           <div
-            class="bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-8 mb-8 gentle-card intersection-observer"
+            class="bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-6 md:mb-8 fade-in-section"
           >
-            <p class="text-lg mb-2 text-container">
-              Giá gốc:
-              <span class="line-through text-warm-gray">1.500.000đ</span>
-            </p>
-            <p
-              class="font-elegant text-4xl md:text-6xl font-bold text-muted-gold mb-4 text-container"
-            >
-              1.200.000đ
-            </p>
-            <p class="text-lg text-soft-gold text-container">
-              Tiết kiệm: 300.000đ (20%)
-            </p>
-            <div class="mt-4 p-3 bg-muted-gold bg-opacity-20 rounded-xl">
-              <p class="text-sm font-semibold text-container">
-                ⚠️ Chỉ còn 47 hộp quà với giá ưu đãi
-              </p>
-            </div>
-          </div>
-
-          <!-- Benefits Grid -->
-          <div
-            class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 intersection-observer"
-          >
-            <div
-              class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-4 gentle-card"
-            >
-              <p class="text-sm text-container">
-                <span class="text-muted-gold">✅</span><br />
-                <span>Miễn phí ship</span>
-              </p>
-            </div>
-            <div
-              class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-4 gentle-card"
-            >
-              <p class="text-sm text-container">
-                <span class="text-muted-gold">✅</span><br />
-                <span>Hàng chính hãng</span>
-              </p>
-            </div>
-            <div
-              class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-4 gentle-card"
-            >
-              <p class="text-sm text-container">
-                <span class="text-muted-gold">✅</span><br />
-                <span>Đổi trả dễ dàng</span>
-              </p>
-            </div>
-            <div
-              class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-4 gentle-card"
-            >
-              <p class="text-sm text-container">
-                <span class="text-muted-gold">✅</span><br />
-                <span>Bao bì sang trọng</span>
-              </p>
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+              <div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Bạn sẽ nhận được:</h3>
+                <ul class="text-left space-y-2 text-sm md:text-base">
+                  <li class="flex items-center">
+                    <span class="text-gold-accent mr-2">✅</span> Bộ sản phẩm Rexri Creative Line (6
+                    sản phẩm)
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-gold-accent mr-2">✅</span> 3 sản phẩm Full Size + 3 Mini Size
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-gold-accent mr-2">✅</span> Hộp quà velvet đỏ cao cấp
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-gold-accent mr-2">✅</span> Túi đựng hộp quà trị giá 50.000đ
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-gold-accent mr-2">✅</span> Thiệp cảm ơn từ Mỹ Phẩm & Dược Mỹ
+                    Phẩm Bác sĩ Thu Tuyết
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-gold-accent mr-2">✅</span> Miễn phí vận chuyển toàn quốc
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-gold-accent mr-2">✅</span> Bảo hành chất lượng 30 ngày
+                  </li>
+                </ul>
+              </div>
+              <div class="text-center">
+                <p class="text-base md:text-lg mb-2">
+                  Giá gốc: <span class="line-through text-blue-soft">1.800.000đ</span>
+                </p>
+                <p class="font-elegant text-4xl md:text-6xl font-bold text-gold-accent mb-4">
+                  1.299.000đ
+                </p>
+                <p class="text-lg md:text-xl text-blue-soft">Tiết kiệm: 501.000đ</p>
+                <div class="mt-4 p-3 bg-blue-medium bg-opacity-20 rounded-xl">
+                  <p class="text-sm font-semibold">⚠️ Chỉ còn 47 hộp quà với giá ưu đãi này!</p>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Main CTA -->
-          <button
-            onclick="openOrderForm()"
-            class="cta-button text-deep-charcoal font-bold py-4 px-12 rounded-3xl text-xl w-full md:w-auto mb-6 intersection-observer"
-          >
-            🛒 Đặt mua ngay - Giảm 20%
-          </button>
+          <div class="fade-in-section">
+            <button
+              onclick="scrollToOrder()"
+              class="cta-button text-lg md:text-xl px-8 md:px-12 py-3 md:py-4"
+            >
+              🛒 Đặt mua ngay - Tiết kiệm 501K
+            </button>
+            <p class="text-sm text-blue-soft mt-4">
+              ⏰ Ưu đãi kết thúc khi hết hàng hoặc 23:59 hôm nay
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Order Form Section -->
-    <section
-      id="order"
-      class="section-spacing elegant-gradient overflow-hidden"
-    >
+    <section id="order" class="py-12 md:py-16 luxury-gradient">
       <div class="container mx-auto px-4">
         <div class="max-w-md mx-auto">
-          <div class="text-center mb-8 intersection-observer">
-            <h2
-              class="font-elegant text-2xl md:text-3xl font-bold text-deep-charcoal mb-4 text-container"
-            >
-              📝 Thông tin đặt hàng
+          <div class="text-center mb-6 md:mb-8 fade-in-section">
+            <h2 class="font-elegant text-2xl md:text-4xl font-bold text-blue-navy mb-4">
+              📝 Đặt hàng ngay - Chỉ 30 giây
             </h2>
-            <p class="text-accent-bronze text-container">
-              Chỉ cần 30 giây để hoàn tất
-            </p>
+            <p class="text-blue-royal">Điền thông tin để nhận ưu đãi đặc biệt</p>
           </div>
 
-          <div
-            class="bg-white rounded-3xl p-6 md:p-8 shadow-lg soft-card intersection-observer"
-          >
-            <form class="space-y-6" data-form data-success="success-message">
-              <!-- Trường ẩn dùng cho FormSubmit -->
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
-              <input
-                type="hidden"
-                name="_subject"
-                value="Bạn có 1 đơn hàng mới"
-              />
-              <input type="hidden" name="_blacklist" value="url" />
-              <!-- Tắt URL nguồn -->
+          <div class="elegant-card p-6 md:p-8 fade-in-section">
+            <form class="space-y-4 md:space-y-6" onsubmit="handleSubmit(event)">
               <div>
-                <label
-                  class="block text-sm font-medium text-deep-charcoal mb-2 text-container"
-                  >Họ và tên *</label
-                >
+                <label class="block text-sm font-medium text-blue-navy mb-2">Họ và tên *</label>
                 <input
                   type="text"
-                  name="Họ và tên khách hàng"
                   required
-                  class="w-full border-2 border-cream-beige rounded-xl px-4 py-3 text-base focus:outline-none focus:border-muted-gold transition-colors"
+                  class="w-full border-2 border-blue-soft rounded-xl px-4 py-3 focus:outline-none focus:border-blue-deep transition-colors text-sm md:text-base"
+                  placeholder="Nhập họ và tên của bạn"
                 />
               </div>
 
               <div>
-                <label
-                  class="block text-sm font-medium text-deep-charcoal mb-2 text-container"
-                  >Số điện thoại *</label
-                >
+                <label class="block text-sm font-medium text-blue-navy mb-2">Số điện thoại *</label>
                 <input
                   type="tel"
-                  name="Số điện thoại"
                   required
-                  class="w-full border-2 border-cream-beige rounded-xl px-4 py-3 text-base focus:outline-none focus:border-muted-gold transition-colors"
+                  class="w-full border-2 border-blue-soft rounded-xl px-4 py-3 focus:outline-none focus:border-blue-deep transition-colors text-sm md:text-base"
+                  placeholder="Nhập số điện thoại"
                 />
               </div>
 
               <div>
-                <label
-                  class="block text-sm font-medium text-deep-charcoal mb-2 text-container"
+                <label class="block text-sm font-medium text-blue-navy mb-2"
                   >Địa chỉ giao hàng *</label
                 >
                 <textarea
                   required
-                  name="Địa chỉ giao hàng"
-                  class="w-full border-2 border-cream-beige rounded-xl px-4 py-3 text-base focus:outline-none focus:border-muted-gold transition-colors"
+                  class="w-full border-2 border-blue-soft rounded-xl px-4 py-3 focus:outline-none focus:border-blue-deep transition-colors text-sm md:text-base"
                   rows="3"
+                  placeholder="Nhập địa chỉ chi tiết để giao hàng"
                 ></textarea>
               </div>
 
-              <!-- Order Summary -->
-              <div class="bg-pale-rose rounded-2xl p-6 soft-card">
-                <h3
-                  class="font-semibold text-deep-charcoal mb-3 text-container"
-                >
+              <!-- Enhanced Order Summary -->
+              <div class="order-summary">
+                <h3 class="font-semibold text-blue-navy mb-4 flex items-center">
+                  <div class="order-item-icon mr-2">📋</div>
                   Tóm tắt đơn hàng
                 </h3>
-                <div class="flex justify-between items-center mb-2">
-                  <span class="text-sm text-accent-bronze text-container"
-                    >Hộp quà Rexri Creative</span
-                  >
-                  <span class="font-semibold text-deep-charcoal text-container"
-                    >1.200.000đ</span
-                  >
-                </div>
-                <div class="flex justify-between items-center mb-2">
-                  <span class="text-sm text-accent-bronze text-container"
-                    >Phí vận chuyển</span
-                  >
-                  <span class="text-sm text-sage-muted text-container"
-                    >Miễn phí</span
-                  >
-                </div>
-                <div class="border-t border-cream-beige pt-2 mt-2">
-                  <div class="flex justify-between items-center">
-                    <span
-                      class="font-semibold text-deep-charcoal text-container"
-                      >Tổng cộng</span
-                    >
-                    <span
-                      class="font-bold text-muted-gold text-lg text-container"
-                      >1.200.000đ</span
-                    >
+                <div class="space-y-1">
+                  <div class="order-item">
+                    <div class="flex items-center flex-1">
+                      <div class="order-item-icon">🎁</div>
+                      <span class="text-sm">Hộp quà Rexri Creative Line</span>
+                    </div>
+                    <span class="font-semibold text-blue-deep">1.299.000đ</span>
+                  </div>
+                  <div class="order-item">
+                    <div class="flex items-center flex-1">
+                      <div class="order-item-icon">👜</div>
+                      <span class="text-sm">Túi đựng cao cấp</span>
+                    </div>
+                    <span class="text-sm text-green-600 font-medium">Miễn phí (50.000đ)</span>
+                  </div>
+                  <div class="order-item">
+                    <div class="flex items-center flex-1">
+                      <div class="order-item-icon">🚚</div>
+                      <span class="text-sm">Phí vận chuyển</span>
+                    </div>
+                    <span class="text-sm text-green-600 font-medium">Miễn phí</span>
+                  </div>
+                  <div class="order-total-section">
+                    <div class="order-total-main">
+                      <div class="flex items-center">
+                        <div class="order-item-icon bg-gradient-to-r from-green-500 to-green-600">
+                          💰
+                        </div>
+                        <span class="font-bold text-blue-navy">Tổng thanh toán</span>
+                      </div>
+                      <span class="font-bold text-blue-deep text-lg md:text-xl">1.299.000đ</span>
+                    </div>
+                    <div class="order-savings">
+                      <p class="text-xs text-green-700 font-semibold">
+                        🎉 Tiết kiệm: 501.000đ so với giá gốc
+                      </p>
+                      <p class="text-xs text-green-700 font-semibold">
+                        🎁 Tặng kèm túi đựng 50.000đ
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <button
-                type="submit"
-                class="w-full cta-button text-deep-charcoal font-bold py-4 rounded-2xl text-lg"
-              >
-                Xác nhận đặt hàng
+              <button type="submit" class="cta-button w-full text-base md:text-lg">
+                ✅ Xác nhận đặt hàng ngay
               </button>
 
-              <p class="text-xs text-center text-accent-bronze text-container">
-                Bằng cách đặt hàng, bạn đồng ý với điều khoản sử dụng của chúng
-                tôi
+              <p class="text-xs text-center text-blue-royal">
+                🔒 Thông tin của bạn được bảo mật tuyệt đối. Chúng tôi chỉ liên hệ để xác nhận đơn
+                hàng.
               </p>
             </form>
           </div>
@@ -1196,63 +1584,73 @@
       </div>
     </section>
 
-    <!-- Contact Info -->
-    <section class="section-spacing bg-warm-ivory overflow-hidden">
+    <!-- Contact Section -->
+    <section class="py-12 md:py-16 blue-gradient">
       <div class="container mx-auto px-4">
-        <div class="max-w-2xl mx-auto text-center">
-          <div class="intersection-observer mb-8">
-            <h2
-              class="font-elegant text-2xl md:text-3xl font-bold text-deep-charcoal mb-4 text-container"
-            >
-              📞 Liên hệ tư vấn
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="fade-in-section mb-6 md:mb-8">
+            <h2 class="font-elegant text-2xl md:text-4xl font-bold text-blue-navy mb-4 md:mb-6">
+              📞 Cần tư vấn thêm? Liên hệ ngay
             </h2>
+            <p class="text-blue-royal text-base md:text-lg">
+              Đội ngũ chuyên gia sẵn sàng hỗ trợ bạn 24/7
+            </p>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div
-              class="bg-white rounded-2xl p-6 soft-card intersection-observer"
-            >
-              <h3 class="font-semibold mb-3 text-deep-charcoal text-container">
-                📞 Hotline
-              </h3>
-              <a
-                href="tel:0966238777"
-                class="text-2xl text-muted-gold font-bold text-container"
-                >0966 238 777</a
-              >
-              -
-              <a
-                href="tel:0976519646"
-                class="text-2xl text-muted-gold font-bold text-container"
-                >0976 519 646</a
-              >
+          <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+            <div class="elegant-card p-4 md:p-6 fade-in-section">
+              <h3 class="font-semibold mb-4 text-blue-navy">📞 Hotline tư vấn miễn phí</h3>
+              <div class="space-y-3">
+                <a
+                  href="tel:0966238777"
+                  class="block text-xl md:text-2xl text-blue-deep font-bold hover:text-blue-royal transition-colors"
+                >
+                  📱 0966 238 777
+                </a>
+                <a
+                  href="tel:0976519646"
+                  class="block text-xl md:text-2xl text-blue-deep font-bold hover:text-blue-royal transition-colors"
+                >
+                  📱 0976 519 646
+                </a>
+                <p class="text-sm text-blue-royal">Thời gian: 8:00 - 22:00 hàng ngày</p>
+              </div>
             </div>
-            <div
-              class="bg-white rounded-2xl p-6 soft-card intersection-observer"
-            >
-              <h3 class="font-semibold mb-3 text-deep-charcoal text-container">
-                📍 Địa chỉ
-              </h3>
-              <p class="text-accent-bronze text-sm text-container">
-                Cơ sở 1: Khu 3- Hùng lô- Tp Việt trì- Phú Thọ
-              </p>
-              <a
-                href="https://maps.app.goo.gl/mpbm14ErLKTkFgxP6"
-                class="text-accent-bronze text-sm text-container"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Cơ sở 2: SN 50- Trần Phú- Tân Dân- Việt trì- Phú Thọ
-              </a>
-              <br />
-              <a
-                href="https://maps.app.goo.gl/vegrv2hDuXLMWwLu6"
-                class="text-accent-bronze text-sm text-container"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Cơ sở 3: SN 26A- Trần Nguyên Đán- Hoàng Mai- Hà Nội
-              </a>
+
+            <div class="elegant-card p-4 md:p-6 fade-in-section">
+              <h3 class="font-semibold mb-4 text-blue-navy">📍 Hệ thống cửa hàng</h3>
+              <div class="space-y-2 text-sm text-blue-royal text-left">
+                <p>
+                  <strong>Cơ sở 1:</strong>
+                  <a
+                    href="https://maps.google.com/?q=Khu+3,+Hùng+Lô,+TP+Việt+Trì,+Phú+Thọ"
+                    target="_blank"
+                    class="text-blue-deep hover:text-blue-royal transition-colors underline"
+                  >
+                    Khu 3, Hùng Lô, TP Việt Trì, Phú Thọ
+                  </a>
+                </p>
+                <p>
+                  <strong>Cơ sở 2:</strong>
+                  <a
+                    href="https://maps.google.com/?q=SN+50,+Trần+Phú,+Tân+Dân,+Việt+Trì,+Phú+Thọ"
+                    target="_blank"
+                    class="text-blue-deep hover:text-blue-royal transition-colors underline"
+                  >
+                    SN 50, Trần Phú, Tân Dân, Việt Trì, Phú Thọ
+                  </a>
+                </p>
+                <p>
+                  <strong>Cơ sở 3:</strong>
+                  <a
+                    href="https://maps.google.com/?q=SN+26A,+Trần+Nguyên+Đán,+Hoàng+Mai,+Hà+Nội"
+                    target="_blank"
+                    class="text-blue-deep hover:text-blue-royal transition-colors underline"
+                  >
+                    SN 26A, Trần Nguyên Đán, Hoàng Mai, Hà Nội
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -1260,188 +1658,387 @@
     </section>
 
     <!-- Footer -->
-    <footer class="charcoal-gradient text-warm-ivory py-12 overflow-hidden">
+    <section class="footer-section py-8 md:py-12 blue-navy text-pearl-white">
       <div class="container mx-auto px-4">
-        <div class="text-center space-y-6">
-          <div class="intersection-observer">
-            <h3
-              class="font-elegant text-xl font-bold text-muted-gold mb-4 text-container"
-            >
+        <div class="text-center space-y-4 md:space-y-6">
+          <div class="fade-in-section">
+            <h3 class="font-elegant text-lg md:text-xl font-bold text-gold-accent mb-4">
               Mỹ Phẩm & Dược Mỹ Phẩm Bác Sĩ Thu Tuyết
             </h3>
-            <p class="text-soft-gold text-sm mb-4 text-container">
-              Đơn vị phân phối độc quyền sản phẩm Rexri tại Việt Nam
+            <p class="text-blue-soft text-sm">
+              Đơn vị phân phối độc quyền sản phẩm Rexri Creative Line tại Việt Nam
             </p>
           </div>
 
-          <div
-
-            class="flex justify-center space-x-6 text-sm intersection-observer"
-          >
-          <a
-          href="https://www.facebook.com/thuytuyet.nguyen.9"
-          class="text-muted-gold hover:text-warm-ivory transition-colors text-container"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Facebook
-        </a>
+          <div class="flex justify-center items-center space-x-4 fade-in-section">
+            <a
+              href="https://www.facebook.com/thuytuyet.nguyen.9"
+              class="social-icon facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook Bác sĩ Thu Tuyết"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
             <a
               href="https://zalo.me/0976519646"
-              class="text-muted-gold hover:text-warm-ivory transition-colors text-container"
+              class="social-icon zalo"
               target="_blank"
               rel="noopener noreferrer"
-              >Zalo</a
+              aria-label="Zalo Bác sĩ Thu Tuyết"
             >
+              <i class="fas fa-comment-dots"></i>
+            </a>
             <a
               href="https://www.tiktok.com/@bsthutuyet"
-              class="text-muted-gold hover:text-warm-ivory transition-colors text-container"
+              class="social-icon tiktok"
               target="_blank"
               rel="noopener noreferrer"
-              >Tiktok</a
+              aria-label="TikTok Bác sĩ Thu Tuyết"
             >
+              <i class="fab fa-tiktok"></i>
+            </a>
           </div>
 
           <div
-            class="border-t border-gray-600 pt-6 text-center text-soft-gold text-xs intersection-observer"
+            class="border-t border-blue-royal pt-4 md:pt-6 text-center text-blue-soft text-xs fade-in-section"
           >
-            <p class="text-container">
-              &copy; 2025 Mỹ Phẩm & Dược Mỹ Phẩm Bác Sĩ Thu Tuyết. Design By
+            <p>&copy; 2025 Mỹ Phẩm & Dược Mỹ Phẩm Bác Sĩ Thu Tuyết. All rights reserved.</p>
+            <p class="mt-1">
+              Design by
               <a
                 href="https://wfourtech.vn/"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="text-gold-accent hover:text-pearl-white transition-colors"
                 >W-FOUR TECH</a
               >
             </p>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- Floating CTA for Desktop -->
-    <div class="floating-cta hidden md:block">
+    <!-- Floating CTA -->
+    <div class="fixed bottom-6 right-6 z-30 hidden md:block">
       <button
         onclick="scrollToOrder()"
-        class="cta-button text-deep-charcoal font-bold py-3 px-6 rounded-full shadow-lg animate-soft-pulse"
+        class="cta-button rounded-full p-3 md:p-4 shadow-2xl animate-bounce-soft text-sm md:text-base"
       >
         🛒 Đặt hàng
       </button>
     </div>
 
     <script>
-      // Intersection Observer để tạo hiệu ứng hiện dần
+      // Image Lightbox Functions
+      function openLightbox(imageSrc, imageAlt) {
+        const modal = document.getElementById('lightboxModal');
+        const image = document.getElementById('lightboxImage');
+
+        image.src = imageSrc;
+        image.alt = imageAlt;
+        modal.classList.add('active');
+
+        // Prevent body scroll
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        const modal = document.getElementById('lightboxModal');
+        modal.classList.remove('active');
+
+        // Restore body scroll
+        document.body.style.overflow = '';
+      }
+
+      // Close lightbox on background click
+      document.getElementById('lightboxModal').addEventListener('click', function (e) {
+        if (e.target === this) {
+          closeLightbox();
+        }
+      });
+
+      // Close lightbox on Escape key
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          closeLightbox();
+        }
+      });
+
+      // Intersection Observer for fade-in animations
       const observerOptions = {
         threshold: 0.1,
-        rootMargin: "0px 0px -20px 0px",
+        rootMargin: '0px 0px -50px 0px',
       };
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
           if (entry.isIntersecting) {
             setTimeout(() => {
-              entry.target.classList.add("visible");
-            }, index * 50);
+              entry.target.classList.add('visible');
+            }, index * 100);
           }
         });
       }, observerOptions);
 
-      document.querySelectorAll(".intersection-observer").forEach((el) => {
+      document.querySelectorAll('.fade-in-section').forEach((el) => {
         observer.observe(el);
       });
 
-      // Scroll tới form đặt hàng
-      function scrollToOrder() {
-        document.getElementById("order").scrollIntoView({ behavior: "smooth" });
-      }
+      // Sticky CTA visibility - Updated to not interfere with footer
+      const stickyCTA = document.getElementById('stickyCTA');
+      const orderSection = document.getElementById('order');
+      const footerSection = document.querySelector('.footer-section');
 
-      function openOrderForm() {
-        document.getElementById("order").scrollIntoView({ behavior: "smooth" });
-      }
-
-      // Sticky CTA button khi form hiển thị
-      const orderSection = document.getElementById("order");
-      const stickyCTA = document.querySelector(".sticky-cta");
-
-      const orderObserver = new IntersectionObserver(
+      const stickyObserver = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              stickyCTA.style.transform = "translateY(100%)";
-            } else {
-              stickyCTA.style.transform = "translateY(0)";
+            if (entry.target === orderSection) {
+              if (entry.isIntersecting) {
+                stickyCTA.classList.remove('visible');
+              } else {
+                stickyCTA.classList.add('visible');
+              }
+            }
+
+            // Hide sticky CTA when footer is visible
+            if (entry.target === footerSection && entry.isIntersecting) {
+              stickyCTA.classList.remove('visible');
             }
           });
         },
-        { threshold: 0.1 }
+        { threshold: 0.1 },
       );
 
-      orderObserver.observe(orderSection);
+      stickyObserver.observe(orderSection);
+      stickyObserver.observe(footerSection);
 
-      // Ngăn kéo ngang và xử lý mobile touch
-      document.addEventListener("touchstart", function () {}, {
-        passive: true,
+      // Smooth scroll to order section
+      function scrollToOrder() {
+        document.getElementById('order').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+
+      // Enhanced form submission handler
+      function handleSubmit(event) {
+        event.preventDefault();
+
+        const button = event.target.querySelector('button[type="submit"]');
+        const originalText = button.innerHTML;
+
+        // Get form data
+        const formData = new FormData(event.target);
+        const name = formData.get('name') || event.target.querySelector('input[type="text"]').value;
+        const phone =
+          formData.get('phone') || event.target.querySelector('input[type="tel"]').value;
+        const address = formData.get('address') || event.target.querySelector('textarea').value;
+
+        // Validate form
+        if (!name || !phone || !address) {
+          alert('⚠️ Vui lòng điền đầy đủ thông tin!');
+          return;
+        }
+
+        // Validate phone number
+        const phoneRegex = /^[0-9]{10,11}$/;
+        if (!phoneRegex.test(phone.replace(/\s/g, ''))) {
+          alert('⚠️ Số điện thoại không hợp lệ!');
+          return;
+        }
+
+        // Simulate form submission
+        button.innerHTML = '⏳ Đang xử lý đơn hàng...';
+        button.disabled = true;
+
+        setTimeout(() => {
+          button.innerHTML = '✅ Đặt hàng thành công!';
+          button.style.background = 'linear-gradient(135deg, #10b981, #34d399)';
+
+          // Reset form
+          event.target.reset();
+
+          // Show success message
+          alert(
+            `🎉 Cảm ơn ${name}! Đơn hàng của bạn đã được ghi nhận.\n\n📦 Sản phẩm: Hộp quà Rexri Creative Line (6 sản phẩm)\n💰 Tổng tiền: 1.299.000đ\n📞 Chúng tôi sẽ liên hệ xác nhận trong thời gian sớm nhất!\n\n✅ Miễn phí vận chuyển toàn quốc\n🎁 Tặng kèm túi đựng cao cấp trị giá 50.000đ`,
+          );
+
+          // Reset button after 3 seconds
+          setTimeout(() => {
+            button.innerHTML = originalText;
+            button.disabled = false;
+            button.style.background = '';
+          }, 3000);
+        }, 2000);
+      }
+
+      // Add smooth scrolling for all anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          }
+        });
       });
 
-      window.addEventListener("resize", function () {
-        document.body.style.overflowX = "hidden";
+      // Video autoplay fallback
+      document.addEventListener('DOMContentLoaded', function () {
+        const video = document.querySelector('video');
+        if (video) {
+          video.play().catch((e) => {
+            console.log('Video autoplay failed, showing poster image');
+          });
+        }
       });
 
-      document.addEventListener("DOMContentLoaded", function () {
-        document.body.style.overflowX = "hidden";
-        document.documentElement.style.overflowX = "hidden";
+      // Prevent horizontal scroll
+      document.body.style.overflowX = 'hidden';
 
-        // Gửi email với FormSubmit
-        const forms = document.querySelectorAll("form[data-form]");
-        forms.forEach((form) => {
-          const successMsgId = form.getAttribute("data-success");
-          const successMsg = document.getElementById(successMsgId);
+      // Add loading animation
+      window.addEventListener('load', function () {
+        document.body.classList.add('loaded');
+      });
 
-          form.addEventListener("submit", async function (event) {
-            event.preventDefault();
+      // Add urgency timer
+      function updateUrgencyTimer() {
+        const now = new Date();
+        const endOfDay = new Date();
+        endOfDay.setHours(23, 59, 59, 999);
 
-            const button = form.querySelector('button[type="submit"]');
-            const originalText = button.innerHTML;
+        const timeLeft = endOfDay - now;
+        const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
 
-            const formData = new FormData(form);
+        const timerElements = document.querySelectorAll('.urgency-timer');
+        timerElements.forEach((el) => {
+          el.textContent = `⏰ Còn ${hours}h ${minutes}m để nhận ưu đãi!`;
+        });
+      }
 
-            try {
-              const res = await fetch(
-                "https://formsubmit.co/ajax/Nguyenthituyetk46bdhydtn@gmail.com",
-                {
-                  method: "POST",
-                  headers: { Accept: "application/json" },
-                  body: formData,
-                }
-              );
+      // Update timer every minute
+      setInterval(updateUrgencyTimer, 60000);
+      updateUrgencyTimer();
 
-              const data = await res.json();
+      // Add 3D parallax effect on scroll
+      window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const parallax = document.querySelectorAll('.video-container');
+        const speed = 0.5;
 
-              if (res.ok && data.success) {
-                form.reset();
-                button.innerHTML = "✅ Đặt hàng thành công!";
-                button.style.background =
-                  "linear-gradient(135deg, #8fbc8f, #a0826d)";
+        parallax.forEach((element) => {
+          const yPos = -(scrolled * speed);
+          element.style.transform = `translateY(${yPos}px) rotateX(${scrolled * 0.01}deg)`;
+        });
+      });
 
-                if (successMsg) successMsg.classList.remove("hidden");
+      // Enhanced product card interactions
+      document.querySelectorAll('.product-card').forEach((card) => {
+        card.addEventListener('mouseenter', function () {
+          this.style.transform = 'translateY(-8px) rotateX(3deg) rotateY(2deg)';
+        });
 
-                // Khôi phục nút sau 3 giây nếu cần
-                setTimeout(() => {
-                  button.innerHTML = originalText;
-                  button.style.background = "";
-                }, 3000);
-              } else {
-                button.innerHTML = "❌ Gửi không thành công";
-                button.style.background = "darkred";
-              }
-            } catch (err) {
-              button.innerHTML = "🚫 Lỗi mạng!";
-              button.style.background = "darkred";
-              console.error("Lỗi:", err);
+        card.addEventListener('mouseleave', function () {
+          this.style.transform = 'translateY(0) rotateX(0deg) rotateY(0deg)';
+        });
+      });
+
+      // Add floating particles effect
+      function createFloatingParticles() {
+        const particleCount = window.innerWidth > 768 ? 20 : 10;
+        const body = document.body;
+
+        for (let i = 0; i < particleCount; i++) {
+          const particle = document.createElement('div');
+          particle.style.cssText = `
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: rgba(77, 166, 255, 0.3);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+            animation: float ${5 + Math.random() * 5}s ease-in-out infinite;
+            left: ${Math.random() * 100}vw;
+            top: ${Math.random() * 100}vh;
+            animation-delay: ${Math.random() * 5}s;
+          `;
+          body.appendChild(particle);
+        }
+      }
+
+      // Initialize particles on load
+      window.addEventListener('load', createFloatingParticles);
+
+      // Enhanced hero section animations
+      document.addEventListener('DOMContentLoaded', function () {
+        // Trigger hero animations in sequence
+        const heroElements = [
+          '.hero-content',
+          '.hero-video',
+          '.hero-description',
+          '.hero-price',
+          '.hero-cta',
+        ];
+
+        heroElements.forEach((selector, index) => {
+          const element = document.querySelector(selector);
+          if (element) {
+            setTimeout(() => {
+              element.style.opacity = '1';
+              element.style.transform = 'translateY(0) rotateX(0deg)';
+            }, index * 300);
+          }
+        });
+      });
+
+      // Performance optimization: Lazy load images
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src || img.src;
+              img.classList.remove('lazy');
+              observer.unobserve(img);
             }
           });
         });
-      });
+
+        document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
+          imageObserver.observe(img);
+        });
+      }
+
+      // Mobile touch optimization
+      if ('ontouchstart' in window) {
+        document.body.classList.add('touch-device');
+      }
+
+      // Optimize for mobile performance
+      if (window.innerWidth <= 768) {
+        // Reduce animation complexity on mobile
+        document.documentElement.style.setProperty('--animation-duration', '0.3s');
+
+        // Disable some 3D effects on mobile for better performance
+        const style = document.createElement('style');
+        style.textContent = `
+          @media (max-width: 768px) {
+            .elegant-card:hover {
+              // transform: translateY(-5px) !important;
+            }
+            .product-image-container:hover {
+              transform: scale(1.02) !important;
+            }
+          }
+        `;
+        document.head.appendChild(style);
+      }
     </script>
   </body>
 </html>
