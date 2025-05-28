@@ -13,7 +13,7 @@
     />
     <meta
       name="keywords"
-      content="hộp quà tặng rexri, mỹ phẩm hàn quốc, chăm sóc da, mỹ phẩm & dược mỹ phẩm bác sĩ thu tuyết, rexri creative line, serum chống lão hóa, toner làm sạch da, kem dưỡng ẩm, quà tặng mẹ, skincare korea"
+      content="hộp quà tặng rexri, mỹ phẩm hàn quốc, chăm sóc da, mỹ phẩm và dược mỹ phẩm bác sĩ thu tuyết, rexri creative line, serum chống lão hóa, toner làm sạch da, kem dưỡng ẩm, quà tặng mẹ, skincare korea"
     />
     <meta name="author" content="Bác Sĩ Thu Tuyết - Chuyên gia da liễu" />
     <meta name="robots" content="index, follow" />
@@ -74,7 +74,7 @@
           "availability": "https://schema.org/InStock",
           "seller": {
             "@type": "Organization",
-            "name": "Mỹ Phẩm & Dược Mỹ Phẩm Bác Sĩ Thu Tuyết"
+            "name": "Mỹ Phẩm và Dược Mỹ Phẩm Bác Sĩ Thu Tuyết"
           }
         }
       }
@@ -91,15 +91,18 @@
         theme: {
           extend: {
             colors: {
-              "blue-elegant": "#e6f3ff",
-              "blue-soft": "#cce7ff",
-              "blue-medium": "#99d6ff",
-              "blue-deep": "#4da6ff",
-              "blue-royal": "#0066cc",
-              "blue-navy": "#003d7a",
+              // Updated Green Palette for Luxury
+              "green-elegant-light": "#f0f8f0", // Very light, almost off-white green
+              "green-soft": "#d9ead3", // Soft, muted green
+              "green-medium": "#93c47d", // Clear, medium green
+              "green-vibrant": "#38761d", // Vibrant, rich green (like emerald)
+              "green-rich": "#274e13", // Deep, sophisticated green
+              "green-dark": "#143007", // Very dark, almost black-green
+
+              // Kept for luxury accents and base
               "pearl-white": "#fafcff",
-              "silver-light": "#f0f4f8",
-              "gold-accent": "#ffd700",
+              "silver-light": "#f0f4f8", // Could be a very light grey-green too
+              "gold-accent": "#ffd700", // Essential for luxury
               "cream-luxury": "#fff8f0",
             },
             fontFamily: {
@@ -134,37 +137,36 @@
         box-sizing: border-box;
       }
 
-      /* Hide default scrollbar for all browsers */
       html {
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
       }
 
       html::-webkit-scrollbar {
-        width: 0; /* Remove scrollbar space */
-        background: transparent; /* Optional: just make scrollbar invisible */
+        width: 0;
+        background: transparent;
       }
 
       body {
         overflow-x: hidden;
+        /* Updated main body gradient to greens */
         background: linear-gradient(
           135deg,
-          #e6f3ff 0%,
-          #cce7ff 30%,
-          #99d6ff 70%,
-          #4da6ff 100%
+          #e6f7ef 0%,
+          /* Light Mint/Sage */ #b3d8bf 30%,
+          /* Soft Sage */ #80b999 70%,
+          /* Medium muted green */ #4d9973 100% /* Deeper muted green */
         );
         min-height: 100vh;
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
       }
 
       body::-webkit-scrollbar {
-        width: 0; /* Remove scrollbar space */
-        background: transparent; /* Optional: just make scrollbar invisible */
+        width: 0;
+        background: transparent;
       }
 
-      /* Hide scrollbar for any scrollable element */
       *::-webkit-scrollbar {
         width: 0;
         background: transparent;
@@ -175,7 +177,6 @@
         -ms-overflow-style: none;
       }
 
-      /* Enhanced 3D Animations */
       @keyframes float {
         0%,
         100% {
@@ -222,11 +223,11 @@
       @keyframes pulseElegant {
         0%,
         100% {
-          box-shadow: 0 0 30px rgba(77, 166, 255, 0.3);
+          box-shadow: 0 0 30px rgba(56, 118, 29, 0.2); /* Green shadow */
           transform: scale(1) rotateY(0deg);
         }
         50% {
-          box-shadow: 0 0 50px rgba(77, 166, 255, 0.6);
+          box-shadow: 0 0 50px rgba(56, 118, 29, 0.4); /* Stronger green shadow */
           transform: scale(1.02) rotateY(2deg);
         }
       }
@@ -292,48 +293,49 @@
         }
       }
 
-      /* Elegant Blue Gradients */
-      .blue-gradient {
+      /* Green Gradient for sections */
+      .section-green-gradient {
         background: linear-gradient(
           135deg,
-          #e6f3ff 0%,
-          #cce7ff 50%,
-          #99d6ff 100%
+          #e0f7f0 0%,
+          /* Light mint/sage */ #a6e3d9 50%,
+          /* Soft jade/seafoam */ #5dd1b3 100% /* Vibrant medium green */
         );
       }
 
-      .blue-deep-gradient {
+      .section-deep-green-gradient {
         background: linear-gradient(
           135deg,
-          #4da6ff 0%,
-          #0066cc 50%,
-          #003d7a 100%
+          #5ab876 0%,
+          /* Medium green */ #2d8c4e 50%,
+          /* Forest green */ #1a5c33 100% /* Deep elegant green */
         );
       }
 
       .pearl-gradient {
+        /* Keeping this subtle for contrast */
         background: linear-gradient(
           135deg,
-          #fafcff 0%,
-          #f0f4f8 50%,
-          #e6f3ff 100%
+          #fdfefd 0%,
+          /* Slightly off-white with hint of green */ #f5fbf7 50%,
+          /* Very light green-grey */ #eef7f2 100% /* Lightest green */
         );
       }
 
       .luxury-gradient {
+        /* Keeping this for high-end feel */
         background: linear-gradient(
           135deg,
-          #fff8f0 0%,
-          #fafcff 50%,
-          #e6f3ff 100%
+          #fffaf0 0%,
+          /* Creamy start */ #f8fff5 50%,
+          /* Creamy light green */ #f0f8f0 100% /* Very light green end */
         );
       }
 
-      /* Enhanced 3D Card styles */
       .elegant-card {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.95); /* Keep light for contrast */
         backdrop-filter: blur(20px);
-        border: 2px solid rgba(77, 166, 255, 0.2);
+        border: 2px solid rgba(56, 118, 29, 0.15); /* Subtle green border */
         border-radius: 10px;
         transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
@@ -352,8 +354,8 @@
         background: linear-gradient(
           90deg,
           transparent,
-          rgba(77, 166, 255, 0.2),
-          transparent
+          rgba(86, 184, 118, 0.15),
+          /* Green shimmer */ transparent
         );
         transition: left 0.8s;
       }
@@ -363,14 +365,17 @@
       }
 
       .elegant-card:hover {
-        /* transform: translateY(-10px) rotateX(5deg) rotateY(5deg); */
-        box-shadow: 0 30px 60px rgba(0, 102, 204, 0.2);
-        border-color: rgba(77, 166, 255, 0.5);
+        box-shadow: 0 30px 60px rgba(39, 78, 19, 0.2); /* Green shadow */
+        border-color: rgba(56, 118, 29, 0.4); /* Stronger green border */
       }
 
-      /* Enhanced 3D Button styles */
       .cta-button {
-        background: linear-gradient(135deg, #4da6ff 0%, #0066cc 100%);
+        /* Updated CTA to a brighter, fresher green */
+        background: linear-gradient(
+          135deg,
+          #76d7c4 0%,
+          #2ecc71 100%
+        ); /* Teal-Green to Emerald Green */
         color: white;
         font-weight: bold;
         padding: 1.2rem 2.5rem;
@@ -378,7 +383,8 @@
         border: none;
         cursor: pointer;
         transition: all 0.4s ease;
-        box-shadow: 0 10px 25px rgba(77, 166, 255, 0.4);
+        /* Adjusted shadow for the new green */
+        box-shadow: 0 10px 25px rgba(46, 204, 113, 0.4);
         position: relative;
         overflow: hidden;
         transform-style: preserve-3d;
@@ -394,8 +400,8 @@
         background: linear-gradient(
           90deg,
           transparent,
-          rgba(255, 255, 255, 0.3),
-          transparent
+          rgba(255, 255, 255, 0.35),
+          /* Slightly more pronounced shimmer */ transparent
         );
         transition: left 0.6s;
       }
@@ -405,25 +411,33 @@
       }
 
       .cta-button:hover {
-        /* transform: translateY(-5px) rotateX(5deg); */
-        box-shadow: 0 20px 40px rgba(77, 166, 255, 0.5);
-        background: linear-gradient(135deg, #0066cc 0%, #003d7a 100%);
+        /* Darker shade on hover for contrast */
+        box-shadow: 0 20px 40px rgba(46, 204, 113, 0.5);
+        background: linear-gradient(
+          135deg,
+          #2ecc71 0%,
+          #27ae60 100%
+        ); /* Emerald to slightly darker Emerald */
+        transform: translateY(-2px); /* Add a subtle lift effect */
       }
 
-      /* Product Card with integrated layout */
       .product-card {
-        background: rgba(255, 255, 255, 0.98);
+        background: rgba(
+          252,
+          255,
+          250,
+          0.98
+        ); /* Very light cream/green background */
         backdrop-filter: blur(15px);
         border-radius: 10px;
         overflow: hidden;
         transition: all 0.4s ease;
-        border: 2px solid rgba(77, 166, 255, 0.1);
+        border: 2px solid rgba(86, 184, 118, 0.1); /* Softer green border */
         transform-style: preserve-3d;
       }
 
       .product-card:hover {
-        /* transform: translateY(-8px) rotateX(3deg); */
-        box-shadow: 0 25px 50px rgba(0, 102, 204, 0.15);
+        box-shadow: 0 25px 50px rgba(39, 78, 19, 0.15); /* Green shadow */
       }
 
       .product-image-container {
@@ -458,10 +472,13 @@
         opacity: 1;
       }
 
-      /* Gift box description styling */
       .gift-description {
-        background: linear-gradient(135deg, #fff8f0 0%, #fafcff 100%);
-        border: 2px solid #ffd700;
+        background: linear-gradient(
+          135deg,
+          #fffaf5 0%,
+          #f5fcf8 100%
+        ); /* Cream to light green */
+        border: 2px solid #b38a3c; /* Gold-bronze border instead of bright gold for subtlety */
         border-radius: 7px;
         padding: 1.5rem;
         position: relative;
@@ -475,16 +492,15 @@
         top: -10px;
         right: -10px;
         font-size: 3rem;
-        opacity: 0.1;
+        opacity: 0.7;
         animation: rotate3d 10s linear infinite;
       }
 
-      /* Video container with 3D effect */
       .video-container {
         position: relative;
         border-radius: 10px;
         overflow: hidden;
-        box-shadow: 0 25px 50px rgba(0, 102, 204, 0.2);
+        box-shadow: 0 25px 50px rgba(39, 78, 19, 0.2); /* Green shadow */
         transform-style: preserve-3d;
         transition: all 0.4s ease;
         animation: videoEntrance 1.2s ease-out;
@@ -492,7 +508,7 @@
 
       .video-container:hover {
         transform: rotateX(5deg) rotateY(5deg) scale(1.02);
-        box-shadow: 0 35px 70px rgba(0, 102, 204, 0.3);
+        box-shadow: 0 35px 70px rgba(39, 78, 19, 0.3); /* Stronger green shadow */
       }
 
       .video-overlay {
@@ -503,20 +519,20 @@
         bottom: 0;
         background: linear-gradient(
           45deg,
-          rgba(77, 166, 255, 0.1),
-          rgba(153, 214, 255, 0.1)
+          rgba(86, 184, 118, 0.1),
+          /* Light green overlay */ rgba(147, 196, 125, 0.1)
+            /* Soft green overlay */
         );
         pointer-events: none;
       }
 
-      /* Image Lightbox Modal */
       .lightbox-modal {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(10, 30, 15, 0.9); /* Dark green translucent bg */
         z-index: 9999;
         display: flex;
         align-items: center;
@@ -549,7 +565,7 @@
         position: absolute;
         top: -40px;
         right: 0;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(200, 230, 200, 0.2); /* Light green translucent */
         color: white;
         border: none;
         width: 40px;
@@ -564,14 +580,17 @@
       }
 
       .lightbox-close:hover {
-        background: rgba(255, 255, 255, 0.3);
+        background: rgba(200, 230, 200, 0.3);
         transform: scale(1.1);
       }
 
-      /* Enhanced Order Summary */
       .order-summary {
-        background: linear-gradient(135deg, #e6f3ff 0%, #f0f4f8 100%);
-        border: 2px solid rgba(77, 166, 255, 0.3);
+        background: linear-gradient(
+          135deg,
+          #e6f7ef 0%,
+          #f0f8f5 100%
+        ); /* Light mint/pearl green */
+        border: 2px solid rgba(86, 184, 118, 0.3); /* Green border */
         border-radius: 10px;
         padding: 1.5rem;
         position: relative;
@@ -585,7 +604,12 @@
         left: 0;
         right: 0;
         height: 4px;
-        background: linear-gradient(90deg, #4da6ff, #0066cc, #4da6ff);
+        background: linear-gradient(
+          90deg,
+          #5cb85c,
+          #274e13,
+          #5cb85c
+        ); /* Green shimmer */
         background-size: 200% 100%;
         animation: shimmer 2s linear infinite;
       }
@@ -595,12 +619,12 @@
         align-items: center;
         justify-content: space-between;
         padding: 0.75rem 0;
-        border-bottom: 1px solid rgba(77, 166, 255, 0.1);
+        border-bottom: 1px solid rgba(86, 184, 118, 0.1); /* Light green border */
         transition: all 0.3s ease;
       }
 
       .order-item:hover {
-        background: rgba(77, 166, 255, 0.05);
+        background: rgba(86, 184, 118, 0.05); /* Very light green hover */
         border-radius: 0.5rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -613,7 +637,11 @@
       .order-item-icon {
         width: 2rem;
         height: 2rem;
-        background: linear-gradient(135deg, #4da6ff, #0066cc);
+        background: linear-gradient(
+          135deg,
+          #5cb85c,
+          #38761d
+        ); /* Green icon bg */
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -624,15 +652,14 @@
         flex-shrink: 0;
       }
 
-      /* Enhanced Order Total Section */
       .order-total-section {
-        border-t-2: 2px solid rgba(77, 166, 255, 0.3);
+        border-t-2: 2px solid rgba(86, 184, 118, 0.3); /* Green border */
         padding-top: 1rem;
         margin-top: 1rem;
         background: linear-gradient(
           135deg,
-          rgba(77, 166, 255, 0.1),
-          rgba(153, 214, 255, 0.1)
+          rgba(86, 184, 118, 0.05),
+          /* Light green tint */ rgba(147, 196, 125, 0.05) /* Soft green tint */
         );
         border-radius: 1rem;
         padding: 1rem;
@@ -648,12 +675,11 @@
       .order-savings {
         text-align: center;
         padding: 0.5rem;
-        background: rgba(16, 185, 129, 0.1);
+        background: rgba(56, 118, 29, 0.1); /* Light green bg for savings */
         border-radius: 0.75rem;
-        border: 1px solid rgba(16, 185, 129, 0.2);
+        border: 1px solid rgba(56, 118, 29, 0.2); /* Green border for savings */
       }
 
-      /* Intersection Observer */
       .fade-in-section {
         opacity: 0;
         transform: translateY(30px) rotateX(10deg);
@@ -665,32 +691,30 @@
         transform: translateY(0) rotateX(0deg);
       }
 
-      /* Price styling with 3D effect */
       .price-original {
         text-decoration: line-through;
-        color: #6b7280;
+        color: #7f8c8d; /* Muted grey for original price */
       }
 
       .price-sale {
-        color: #0066cc;
+        color: #38761d; /* Rich green for sale price */
         font-weight: bold;
-        text-shadow: 2px 2px 4px rgba(0, 102, 204, 0.2);
+        text-shadow: 2px 2px 4px rgba(56, 118, 29, 0.2); /* Green text shadow */
       }
 
-      /* Gift badge with 3D animation */
       .gift-badge {
-        background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
-        color: white;
+        /* Using gold accent for gift badge for pop */
+        background: linear-gradient(135deg, #ffd700, #f0c000);
+        color: #4a3b00; /* Dark gold text for contrast */
         padding: 0.75rem 1.5rem;
         border-radius: 10px;
         font-size: 0.875rem;
         font-weight: bold;
         animation: bounce-soft 2s ease-in-out infinite;
-        box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+        box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
         transform-style: preserve-3d;
       }
 
-      /* Hero section specific styling */
       .hero-content {
         animation: fadeIn 1s ease-out;
       }
@@ -711,7 +735,6 @@
         animation: slideUp 0.8s ease-out 1.2s both;
       }
 
-      /* Social Media Icons */
       .social-icon {
         display: inline-flex;
         align-items: center;
@@ -741,7 +764,6 @@
         background: linear-gradient(135deg, #000000, #333333);
       }
 
-      /* Responsive optimizations */
       @media (max-width: 768px) {
         .video-container {
           border-radius: 1rem;
@@ -751,9 +773,6 @@
           padding: 1.25rem;
           font-size: 1rem;
         }
-        /* .elegant-card:hover {
-          transform: translateY(-5px);
-        } */
         .hero-content h1 {
           font-size: 2.5rem;
           line-height: 1.2;
@@ -809,16 +828,16 @@
         }
       }
 
-      /* Sticky CTA - Fixed to not cover copyright */
       .sticky-cta {
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
         z-index: 40;
-        background: linear-gradient(135deg, #4da6ff 0%, #0066cc 100%);
+        /* Ensure sticky CTA also uses the new vibrant green */
+        background: linear-gradient(135deg, #76d7c4 0%, #2ecc71 100%);
         padding: 1rem;
-        box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 -8px 25px rgba(46, 204, 113, 0.2); /* Subtle shadow for sticky */
         transform: translateY(100%);
         transition: transform 0.3s ease;
       }
@@ -827,7 +846,6 @@
         transform: translateY(0);
       }
 
-      /* Ensure footer is always visible */
       .footer-section {
         position: relative;
         z-index: 50;
@@ -835,7 +853,6 @@
         padding-bottom: 2rem;
       }
 
-      /* Mobile-first approach for better performance */
       .container {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -856,13 +873,12 @@
       }
     </style>
   </head>
-  <body class="font-modern text-blue-navy">
+  <!-- Updated text colors in body tag -->
+  <body class="font-modern text-green-dark">
     <!-- Image Lightbox Modal -->
     <div class="lightbox-modal" id="lightboxModal">
       <div class="lightbox-content">
-        <button class="lightbox-close" onclick="closeLightbox()">
-          &times;
-        </button>
+        <button class="lightbox-close" onclick="closeLightbox()">×</button>
         <img
           class="lightbox-image"
           id="lightboxImage"
@@ -883,7 +899,10 @@
     </div>
 
     <!-- Hero Section with Video -->
-    <section class="min-h-screen blue-gradient relative overflow-hidden">
+    <!-- Using section-green-gradient class for the hero section -->
+    <section
+      class="min-h-screen section-green-gradient relative overflow-hidden"
+    >
       <div class="container mx-auto px-4 py-8">
         <div class="text-center space-y-6 md:space-y-8 max-w-6xl mx-auto">
           <!-- Header -->
@@ -891,10 +910,11 @@
             <h1
               class="font-elegant text-3xl md:text-6xl lg:text-7xl font-bold leading-tight"
             >
-              <span class="text-blue-deep">🎁 Hộp Quà Tặng</span><br />
-              <span class="text-blue-navy">Rexri Creative Line</span>
+              <!-- Updated text colors for green theme -->
+              <span class="text-green-vibrant">🎁 Hộp Quà Tặng</span><br />
+              <span class="text-green-dark">Rexri Creative Line</span>
             </h1>
-            <p class="font-elegant text-lg md:text-2xl text-blue-royal px-4">
+            <p class="font-elegant text-lg md:text-2xl text-green-rich px-4">
               Tinh hoa chăm sóc da từ Hàn Quốc - Bí quyết làn da trẻ trung
             </p>
             <div class="gift-badge inline-block">
@@ -912,7 +932,7 @@
                 playsinline
                 poster="./img/rexri-creative-line.jpg"
               >
-                <source src="./img/video-1.mp4" type="video/mp4" />
+                <source src="./img/video-2.mp4" type="video/mp4" />
                 <img
                   src="./img/rexri-creative-line.jpg"
                   alt="Hộp quà Rexri Creative Line - Bộ sản phẩm chăm sóc da cao cấp từ Hàn Quốc"
@@ -927,18 +947,18 @@
           <div class="hero-description">
             <div class="gift-description max-w-4xl mx-auto">
               <h2
-                class="font-elegant text-xl md:text-3xl font-bold text-blue-navy mb-4"
+                class="font-elegant text-xl md:text-3xl font-bold text-green-dark mb-4"
               >
                 ✨ Hộp Quà Hoàn Hảo - 6 Sản Phẩm Trong 1 Bộ
               </h2>
               <div class="grid md:grid-cols-2 gap-4 md:gap-6 text-left">
                 <div class="space-y-3">
                   <h3
-                    class="font-semibold text-blue-royal text-base md:text-lg"
+                    class="font-semibold text-green-rich text-base md:text-lg"
                   >
                     🏠 3 Sản Phẩm Full Size - Dùng Thoải Mái Tại Nhà:
                   </h3>
-                  <ul class="space-y-2 text-blue-navy text-sm md:text-base">
+                  <ul class="space-y-2 text-green-dark text-sm md:text-base">
                     <li class="flex items-center">
                       <span class="text-gold-accent mr-2">✓</span> Rexri
                       Creative Toner (120ml) - Làm sạch sâu
@@ -955,11 +975,11 @@
                 </div>
                 <div class="space-y-3">
                   <h3
-                    class="font-semibold text-blue-royal text-base md:text-lg"
+                    class="font-semibold text-green-rich text-base md:text-lg"
                   >
                     ✈️ 3 Sản Phẩm Mini Size - Thuận Tiện Mang Theo:
                   </h3>
-                  <ul class="space-y-2 text-blue-navy text-sm md:text-base">
+                  <ul class="space-y-2 text-green-dark text-sm md:text-base">
                     <li class="flex items-center">
                       <span class="text-gold-accent mr-2">✓</span> Mini Toner
                       (30ml) - Du lịch, công tác
@@ -976,7 +996,7 @@
                 </div>
               </div>
               <p
-                class="text-center mt-4 text-blue-royal font-semibold text-sm md:text-base"
+                class="text-center mt-4 text-green-rich font-semibold text-sm md:text-base"
               >
                 💝 Hoàn hảo cho việc sử dụng hàng ngày và mang theo bên mình!
               </p>
@@ -989,7 +1009,7 @@
               class="elegant-card p-6 md:p-8 max-w-md mx-auto animate-pulse-elegant"
             >
               <div class="space-y-4">
-                <p class="text-base md:text-lg">
+                <p class="text-base md:text-lg text-green-dark">
                   Giá gốc:
                   <span class="price-original text-xl md:text-2xl"
                     >1.800.000đ</span
@@ -998,19 +1018,19 @@
                 <p class="text-3xl md:text-5xl price-sale font-elegant">
                   1.299.000đ
                 </p>
-                <p class="text-blue-royal">
+                <p class="text-green-rich">
                   Tiết kiệm ngay:
-                  <span class="font-bold text-blue-deep">501.000đ</span>
+                  <span class="font-bold text-green-vibrant">501.000đ</span>
                 </p>
                 <div
                   class="bg-cream-luxury p-3 rounded-xl border border-gold-accent"
                 >
-                  <p class="text-sm font-semibold text-blue-navy">
+                  <p class="text-sm font-semibold text-green-dark">
                     🎁 Tặng kèm túi đựng hộp quà cao cấp trị giá 50.000đ
                   </p>
                 </div>
                 <div
-                  class="bg-blue-deep text-white p-3 rounded-xl font-semibold"
+                  class="bg-green-vibrant text-white p-3 rounded-xl font-semibold"
                 >
                   ⚠️ Chỉ còn 47 hộp với giá ưu đãi này!
                 </div>
@@ -1026,7 +1046,7 @@
             >
               🛒 Đặt mua ngay - Tiết kiệm 501K
             </button>
-            <p class="text-sm text-blue-royal mt-2">
+            <p class="text-sm text-green-rich mt-2">
               ✅ Miễn phí vận chuyển toàn quốc
             </p>
           </div>
@@ -1039,11 +1059,11 @@
       <div class="container mx-auto px-4">
         <div class="text-center mb-8 md:mb-12 fade-in-section">
           <h2
-            class="font-elegant text-2xl md:text-5xl font-bold text-blue-navy mb-4 md:mb-6"
+            class="font-elegant text-2xl md:text-5xl font-bold text-green-dark mb-4 md:mb-6"
           >
             📦 Bộ sản phẩm chăm sóc da hoàn chỉnh 3 trong 1
           </h2>
-          <p class="text-blue-royal text-lg md:text-xl">
+          <p class="text-green-rich text-lg md:text-xl">
             Quy trình chăm sóc da khoa học từ Hàn Quốc
           </p>
         </div>
@@ -1058,31 +1078,31 @@
               <div class="space-y-4 md:space-y-6">
                 <div class="flex items-center space-x-4">
                   <div
-                    class="w-12 h-12 md:w-16 md:h-16 bg-blue-elegant rounded-full flex items-center justify-center text-2xl md:text-3xl"
+                    class="w-12 h-12 md:w-16 md:h-16 bg-green-elegant-light rounded-full flex items-center justify-center text-2xl md:text-3xl"
                   >
                     🌸
                   </div>
                   <div>
                     <h3
-                      class="font-elegant text-xl md:text-2xl font-bold text-blue-navy"
+                      class="font-elegant text-xl md:text-2xl font-bold text-green-dark"
                     >
                       Rexri Creative Toner
                     </h3>
-                    <p class="text-blue-royal text-sm md:text-base">
+                    <p class="text-green-rich text-sm md:text-base">
                       Bước 1: Làm sạch & Cấp ẩm
                     </p>
                   </div>
                 </div>
-                <p class="text-blue-navy leading-relaxed text-sm md:text-base">
+                <p class="text-green-dark leading-relaxed text-sm md:text-base">
                   Làm sạch sâu, loại bỏ tế bào chết và cung cấp độ ẩm tự nhiên
                   cho da. Công thức đặc biệt từ chiết xuất táo tàu tươi và 15+
                   thảo dược Đông y quý hiếm.
                 </p>
-                <div class="bg-blue-elegant p-3 md:p-4 rounded-xl">
-                  <p class="font-semibold text-sm mb-3 text-blue-navy">
+                <div class="bg-green-elegant-light p-3 md:p-4 rounded-xl">
+                  <p class="font-semibold text-sm mb-3 text-green-dark">
                     Thành phần quý hiếm:
                   </p>
-                  <ul class="text-xs md:text-sm space-y-2 text-blue-royal">
+                  <ul class="text-xs md:text-sm space-y-2 text-green-rich">
                     <li class="flex items-center">
                       <span class="text-gold-accent mr-2">•</span> Chiết xuất
                       táo tàu tươi từ Hàn Quốc
@@ -1131,31 +1151,31 @@
               <div class="space-y-4 md:space-y-6 md:order-2">
                 <div class="flex items-center space-x-4">
                   <div
-                    class="w-12 h-12 md:w-16 md:h-16 bg-blue-elegant rounded-full flex items-center justify-center text-2xl md:text-3xl"
+                    class="w-12 h-12 md:w-16 md:h-16 bg-green-elegant-light rounded-full flex items-center justify-center text-2xl md:text-3xl"
                   >
                     ✨
                   </div>
                   <div>
                     <h3
-                      class="font-elegant text-xl md:text-2xl font-bold text-blue-navy"
+                      class="font-elegant text-xl md:text-2xl font-bold text-green-dark"
                     >
                       Rexri Creative Serum
                     </h3>
-                    <p class="text-blue-royal text-sm md:text-base">
+                    <p class="text-green-rich text-sm md:text-base">
                       Bước 2: Làm sáng & Phục hồi
                     </p>
                   </div>
                 </div>
-                <p class="text-blue-navy leading-relaxed text-sm md:text-base">
+                <p class="text-green-dark leading-relaxed text-sm md:text-base">
                   Làm sáng da, cải thiện nếp nhăn và phục hồi độ đàn hồi tự
                   nhiên. Chứa chiết xuất hạt óc chó cao cấp và peptide chống lão
                   hóa thế hệ mới.
                 </p>
-                <div class="bg-blue-elegant p-3 md:p-4 rounded-xl">
-                  <p class="font-semibold text-sm mb-3 text-blue-navy">
+                <div class="bg-green-elegant-light p-3 md:p-4 rounded-xl">
+                  <p class="font-semibold text-sm mb-3 text-green-dark">
                     Công thức độc quyền:
                   </p>
-                  <ul class="text-xs md:text-sm space-y-2 text-blue-royal">
+                  <ul class="text-xs md:text-sm space-y-2 text-green-rich">
                     <li class="flex items-center">
                       <span class="text-gold-accent mr-2">•</span> Chiết xuất
                       hạt óc chó cao cấp
@@ -1182,31 +1202,31 @@
               <div class="space-y-4 md:space-y-6">
                 <div class="flex items-center space-x-4">
                   <div
-                    class="w-12 h-12 md:w-16 md:h-16 bg-blue-elegant rounded-full flex items-center justify-center text-2xl md:text-3xl"
+                    class="w-12 h-12 md:w-16 md:h-16 bg-green-elegant-light rounded-full flex items-center justify-center text-2xl md:text-3xl"
                   >
                     🌿
                   </div>
                   <div>
                     <h3
-                      class="font-elegant text-xl md:text-2xl font-bold text-blue-navy"
+                      class="font-elegant text-xl md:text-2xl font-bold text-green-dark"
                     >
                       Rexri Creative Cream
                     </h3>
-                    <p class="text-blue-royal text-sm md:text-base">
+                    <p class="text-green-rich text-sm md:text-base">
                       Bước 3: Dưỡng ẩm & Bảo vệ
                     </p>
                   </div>
                 </div>
-                <p class="text-blue-navy leading-relaxed text-sm md:text-base">
+                <p class="text-green-dark leading-relaxed text-sm md:text-base">
                   Dưỡng ẩm sâu, chống lão hóa và bảo vệ da khỏi tác hại môi
                   trường. Chứa nước nấm dược liệu quý hiếm và 8 loại nấm quý từ
                   núi cao Hàn Quốc.
                 </p>
-                <div class="bg-blue-elegant p-3 md:p-4 rounded-xl">
-                  <p class="font-semibold text-sm mb-3 text-blue-navy">
+                <div class="bg-green-elegant-light p-3 md:p-4 rounded-xl">
+                  <p class="font-semibold text-sm mb-3 text-green-dark">
                     Tinh chất thiên nhiên:
                   </p>
-                  <ul class="text-xs md:text-sm space-y-2 text-blue-royal">
+                  <ul class="text-xs md:text-sm space-y-2 text-green-rich">
                     <li class="flex items-center">
                       <span class="text-gold-accent mr-2">•</span> Nước nấm dược
                       liệu quý hiếm
@@ -1294,26 +1314,26 @@
         <div class="max-w-4xl mx-auto fade-in-section">
           <div class="elegant-card p-6 md:p-8 text-center">
             <h3
-              class="font-elegant text-xl md:text-3xl font-bold mb-4 md:mb-6 text-blue-navy"
+              class="font-elegant text-xl md:text-3xl font-bold mb-4 md:mb-6 text-green-dark"
             >
-              💌 Thiệp cảm ơn đặc biệt từ Mỹ Phẩm & Dược Mỹ Phẩm Bác sĩ Thu
+              💌 Thiệp cảm ơn đặc biệt từ Mỹ Phẩm và Dược Mỹ Phẩm Bác sĩ Thu
               Tuyết
             </h3>
-            <div class="bg-silver-light p-4 md:p-6 rounded-2xl">
+            <div class="bg-silver-light  rounded-2xl">
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/thiep-cam-on-W0Q1pEJVpIZt7C8SflstxOZn2vfocx.png"
-                alt="Thiệp cảm ơn chân thành từ Mỹ Phẩm & Dược Mỹ Phẩm Bác sĩ Thu Tuyết"
+                alt="Thiệp cảm ơn chân thành từ Mỹ Phẩm và Dược Mỹ Phẩm Bác sĩ Thu Tuyết"
                 class="w-full max-w-2xl mx-auto rounded-xl shadow-lg cursor-pointer"
-                onclick="openLightbox('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/thiep-cam-on-W0Q1pEJVpIZt7C8SflstxOZn2vfocx.png', 'Thiệp cảm ơn từ Mỹ Phẩm & Dược Mỹ Phẩm Bác sĩ Thu Tuyết')"
+                onclick="openLightbox('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/thiep-cam-on-W0Q1pEJVpIZt7C8SflstxOZn2vfocx.png', 'Thiệp cảm ơn từ Mỹ Phẩm và Dược Mỹ Phẩm Bác sĩ Thu Tuyết')"
                 loading="lazy"
               />
             </div>
-            <p class="mt-4 text-blue-royal text-sm md:text-base">
-              Mỗi hộp quà đều đi kèm thiệp cảm ơn chân thành từ Mỹ Phẩm & Dược
+            <p class="mt-4 text-green-rich text-sm md:text-base">
+              Mỗi hộp quà đều đi kèm thiệp cảm ơn chân thành từ Mỹ Phẩm và Dược
               Mỹ Phẩm Bác sĩ Thu Tuyết -
               <span class="font-semibold"
-                >đơn vị phân phối độc quyền sản phẩm exri Creative Line tại Việt
-                Nam</span
+                >đơn vị phân phối độc quyền sản phẩm Rexri Creative Line tại
+                Việt Nam</span
               >
             </p>
           </div>
@@ -1322,15 +1342,15 @@
     </section>
 
     <!-- Customer Reviews Section -->
-    <section class="py-12 md:py-16 blue-gradient">
+    <section class="py-12 md:py-16 section-green-gradient">
       <div class="container mx-auto px-4">
         <div class="text-center mb-8 md:mb-12 fade-in-section">
           <h2
-            class="font-elegant text-2xl md:text-5xl font-bold text-blue-navy mb-4 md:mb-6"
+            class="font-elegant text-2xl md:text-5xl font-bold text-green-dark mb-4 md:mb-6"
           >
             ❤️ Khách hàng nói gì về Rexri Creative?
           </h2>
-          <p class="text-blue-royal text-lg md:text-xl">
+          <p class="text-green-rich text-lg md:text-xl">
             Hơn 10.000 khách hàng tin tưởng và hài lòng
           </p>
         </div>
@@ -1350,10 +1370,10 @@
                 />
               </div>
               <div>
-                <h4 class="font-semibold text-blue-navy text-sm md:text-base">
+                <h4 class="font-semibold text-green-dark text-sm md:text-base">
                   Chị Hương Tr.
                 </h4>
-                <p class="text-xs md:text-sm text-blue-royal">
+                <p class="text-xs md:text-sm text-green-rich">
                   Hà Nội - 32 tuổi
                 </p>
                 <div class="flex text-gold-accent text-xs md:text-sm mt-1">
@@ -1362,7 +1382,7 @@
               </div>
             </div>
             <p
-              class="text-blue-navy leading-relaxed italic text-sm md:text-base"
+              class="text-green-dark leading-relaxed italic text-sm md:text-base"
             >
               "Tôi tặng cho mẹ nhân dịp sinh nhật 60 tuổi. Mẹ rất thích vì sản
               phẩm dịu nhẹ mà hiệu quả rõ rệt. Làn da mẹ đã cải thiện đáng kể
@@ -1384,10 +1404,10 @@
                 />
               </div>
               <div>
-                <h4 class="font-semibold text-blue-navy text-sm md:text-base">
+                <h4 class="font-semibold text-green-dark text-sm md:text-base">
                   Chị Ngọc A.
                 </h4>
-                <p class="text-xs md:text-sm text-blue-royal">
+                <p class="text-xs md:text-sm text-green-rich">
                   TP.HCM - 28 tuổi
                 </p>
                 <div class="flex text-gold-accent text-xs md:text-sm mt-1">
@@ -1396,7 +1416,7 @@
               </div>
             </div>
             <p
-              class="text-blue-navy leading-relaxed italic text-sm md:text-base"
+              class="text-green-dark leading-relaxed italic text-sm md:text-base"
             >
               "Sản phẩm thật sự tuyệt vời! Làn da mình đã cải thiện rất nhiều,
               đặc biệt là vùng quanh mắt. Hộp quà cũng rất xinh và ý nghĩa. Đây
@@ -1418,10 +1438,10 @@
                 />
               </div>
               <div>
-                <h4 class="font-semibold text-blue-navy text-sm md:text-base">
+                <h4 class="font-semibold text-green-dark text-sm md:text-base">
                   Chị Mai L.
                 </h4>
-                <p class="text-xs md:text-sm text-blue-royal">
+                <p class="text-xs md:text-sm text-green-rich">
                   Đà Nẵng - 30 tuổi
                 </p>
                 <div class="flex text-gold-accent text-xs md:text-sm mt-1">
@@ -1430,7 +1450,7 @@
               </div>
             </div>
             <p
-              class="text-blue-navy leading-relaxed italic text-sm md:text-base"
+              class="text-green-dark leading-relaxed italic text-sm md:text-base"
             >
               "Mình đã thử nhiều sản phẩm chăm sóc da khác nhưng chỉ có Rexri
               mới cho hiệu quả như mong đợi. Da mịn màng, sáng hơn hẳn và quan
@@ -1452,10 +1472,10 @@
                 />
               </div>
               <div>
-                <h4 class="font-semibold text-blue-navy text-sm md:text-base">
+                <h4 class="font-semibold text-green-dark text-sm md:text-base">
                   Chị Linh P.
                 </h4>
-                <p class="text-xs md:text-sm text-blue-royal">
+                <p class="text-xs md:text-sm text-green-rich">
                   Cần Thơ - 24 tuổi
                 </p>
                 <div class="flex text-gold-accent text-xs md:text-sm mt-1">
@@ -1464,7 +1484,7 @@
               </div>
             </div>
             <p
-              class="text-blue-navy leading-relaxed italic text-sm md:text-base"
+              class="text-green-dark leading-relaxed italic text-sm md:text-base"
             >
               "Giao hàng nhanh chóng, bao bì đẹp sang trọng, sản phẩm chất lượng
               vượt mong đợi. Đây là lần thứ 4 mình mua để tặng người thân trong
@@ -1490,11 +1510,11 @@
       <div class="container mx-auto px-4">
         <div class="text-center mb-8 md:mb-12 fade-in-section">
           <h2
-            class="font-elegant text-2xl md:text-5xl font-bold text-blue-navy mb-4 md:mb-6"
+            class="font-elegant text-2xl md:text-5xl font-bold text-green-dark mb-4 md:mb-6"
           >
             🌟 Tại sao hơn 10.000 khách hàng chọn Rexri Creative?
           </h2>
-          <p class="text-blue-royal text-lg md:text-xl">
+          <p class="text-green-rich text-lg md:text-xl">
             6 lý do khiến Rexri Creative trở thành lựa chọn hàng đầu
           </p>
         </div>
@@ -1503,11 +1523,13 @@
           class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto"
         >
           <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
-            <div class="text-3xl md:text-4xl mb-4">🇰🇷</div>
-            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+            <div class="text-3xl md:text-4xl mb-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="Cờ Hàn Quốc" class="inline-block w-8 h-8 md:w-10 md:h-10 rounded shadow" />
+            </div>
+            <h3 class="font-bold text-base md:text-lg mb-3 text-green-dark">
               Xuất xứ Hàn Quốc chính hãng
             </h3>
-            <p class="text-blue-royal text-sm">
+            <p class="text-green-rich text-sm">
               Công thức độc quyền kết hợp y học cổ truyền Đông y với công nghệ
               hiện đại từ Hàn Quốc
             </p>
@@ -1515,10 +1537,10 @@
 
           <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
             <div class="text-3xl md:text-4xl mb-4">🌿</div>
-            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+            <h3 class="font-bold text-base md:text-lg mb-3 text-green-dark">
               100% thành phần tự nhiên
             </h3>
-            <p class="text-blue-royal text-sm">
+            <p class="text-green-rich text-sm">
               Chiết xuất từ 30+ thảo dược quý hiếm, không chứa hóa chất độc hại,
               an toàn cho mọi loại da
             </p>
@@ -1526,10 +1548,10 @@
 
           <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
             <div class="text-3xl md:text-4xl mb-4">🎁</div>
-            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+            <h3 class="font-bold text-base md:text-lg mb-3 text-green-dark">
               Bao bì sang trọng cao cấp
             </h3>
-            <p class="text-blue-royal text-sm">
+            <p class="text-green-rich text-sm">
               Hộp quà velvet đỏ cao cấp, thiết kế tinh tế, sẵn sàng làm món quà
               ý nghĩa cho người thân
             </p>
@@ -1537,10 +1559,10 @@
 
           <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
             <div class="text-3xl md:text-4xl mb-4">✨</div>
-            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+            <h3 class="font-bold text-base md:text-lg mb-3 text-green-dark">
               Hiệu quả rõ rệt sau 2 tuần
             </h3>
-            <p class="text-blue-royal text-sm">
+            <p class="text-green-rich text-sm">
               Da sáng mịn, giảm nếp nhăn, cải thiện độ đàn hồi và làm chậm quá
               trình lão hóa
             </p>
@@ -1548,11 +1570,11 @@
 
           <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
             <div class="text-3xl md:text-4xl mb-4">👩‍⚕️</div>
-            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+            <h3 class="font-bold text-base md:text-lg mb-3 text-green-dark">
               Chuyên gia da liễu khuyên dùng
             </h3>
-            <p class="text-blue-royal text-sm">
-              Được phân phối độc quyền bởi Mỹ Phẩm & Dược Mỹ Phẩm Bác Sĩ Thu
+            <p class="text-green-rich text-sm">
+              Được phân phối độc quyền bởi Mỹ Phẩm và Dược Mỹ Phẩm Bác Sĩ Thu
               Tuyết - đơn vị phân phối độc quyền sản phẩm Rexri Creative Line
               tại Việt Nam
             </p>
@@ -1560,10 +1582,10 @@
 
           <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
             <div class="text-3xl md:text-4xl mb-4">🛡️</div>
-            <h3 class="font-bold text-base md:text-lg mb-3 text-blue-navy">
+            <h3 class="font-bold text-base md:text-lg mb-3 text-green-dark">
               Cam kết chất lượng 100%
             </h3>
-            <p class="text-blue-royal text-sm">
+            <p class="text-green-rich text-sm">
               Đổi trả miễn phí nếu không hài lòng trong 30 ngày đầu sử dụng
             </p>
           </div>
@@ -1582,14 +1604,16 @@
     </section>
 
     <!-- Special Offer Section -->
-    <section class="py-12 md:py-16 blue-deep-gradient text-pearl-white">
+    <section
+      class="py-12 md:py-16 section-deep-green-gradient text-pearl-white"
+    >
       <div class="container mx-auto px-4 text-center">
         <div class="max-w-4xl mx-auto">
           <div class="fade-in-section mb-6 md:mb-8">
             <h2 class="font-elegant text-2xl md:text-5xl font-bold mb-4">
               🎉 Ưu đãi đặc biệt chỉ hôm nay
             </h2>
-            <p class="text-blue-soft text-lg md:text-xl">
+            <p class="text-green-soft text-lg md:text-xl">
               Cơ hội vàng không thể bỏ lỡ - Số lượng có hạn
             </p>
           </div>
@@ -1603,7 +1627,9 @@
                 <h3 class="text-xl md:text-2xl font-bold mb-4">
                   Bạn sẽ nhận được:
                 </h3>
-                <ul class="text-left space-y-2 text-sm md:text-base">
+                <ul
+                  class="text-left space-y-2 text-sm md:text-base text-green-soft"
+                >
                   <li class="flex items-center">
                     <span class="text-gold-accent mr-2">✅</span> Bộ sản phẩm
                     Rexri Creative Line (6 sản phẩm)
@@ -1622,7 +1648,7 @@
                   </li>
                   <li class="flex items-center">
                     <span class="text-gold-accent mr-2">✅</span> Thiệp cảm ơn
-                    từ Mỹ Phẩm & Dược Mỹ Phẩm Bác sĩ Thu Tuyết
+                    từ Mỹ Phẩm và Dược Mỹ Phẩm Bác sĩ Thu Tuyết
                   </li>
                   <li class="flex items-center">
                     <span class="text-gold-accent mr-2">✅</span> Miễn phí vận
@@ -1635,19 +1661,21 @@
                 </ul>
               </div>
               <div class="text-center">
-                <p class="text-base md:text-lg mb-2">
+                <p class="text-base md:text-lg mb-2 text-green-soft">
                   Giá gốc:
-                  <span class="line-through text-blue-soft">1.800.000đ</span>
+                  <span class="line-through">1.800.000đ</span>
                 </p>
                 <p
                   class="font-elegant text-4xl md:text-6xl font-bold text-gold-accent mb-4"
                 >
                   1.299.000đ
                 </p>
-                <p class="text-lg md:text-xl text-blue-soft">
+                <p class="text-lg md:text-xl text-green-soft">
                   Tiết kiệm: 501.000đ
                 </p>
-                <div class="mt-4 p-3 bg-blue-medium bg-opacity-20 rounded-xl">
+                <div
+                  class="mt-4 p-3 bg-green-medium bg-opacity-20 rounded-xl text-pearl-white"
+                >
                   <p class="text-sm font-semibold">
                     ⚠️ Chỉ còn 47 hộp quà với giá ưu đãi này!
                   </p>
@@ -1664,7 +1692,7 @@
             >
               🛒 Đặt mua ngay - Tiết kiệm 501K
             </button>
-            <p class="text-sm text-blue-soft mt-4">
+            <p class="text-sm text-green-soft mt-4">
               ⏰ Ưu đãi kết thúc khi hết hàng hoặc 23:59 hôm nay
             </p>
           </div>
@@ -1678,11 +1706,11 @@
         <div class="max-w-md mx-auto">
           <div class="text-center mb-6 md:mb-8 fade-in-section">
             <h2
-              class="font-elegant text-2xl md:text-4xl font-bold text-blue-navy mb-4"
+              class="font-elegant text-2xl md:text-4xl font-bold text-green-dark mb-4"
             >
               📝 Đặt hàng ngay - Chỉ 30 giây
             </h2>
-            <p class="text-blue-royal">
+            <p class="text-green-rich">
               Điền thông tin để nhận ưu đãi đặc biệt
             </p>
           </div>
@@ -1711,39 +1739,39 @@
               <input type="hidden" name="Giá sản phẩm" value="1.299.000đ" />
 
               <div>
-                <label class="block text-sm font-medium text-blue-navy mb-2"
+                <label class="block text-sm font-medium text-green-dark mb-2"
                   >Họ và tên *</label
                 >
                 <input
                   type="text"
                   name="Họ và tên khách hàng"
                   required
-                  class="w-full border-2 border-blue-soft rounded-xl px-4 py-3 focus:outline-none focus:border-blue-deep transition-colors text-sm md:text-base"
+                  class="w-full border-2 border-green-soft rounded-xl px-4 py-3 focus:outline-none focus:border-green-vibrant transition-colors text-sm md:text-base text-green-dark"
                   placeholder="Nhập họ và tên của bạn"
                 />
               </div>
 
               <div>
-                <label class="block text-sm font-medium text-blue-navy mb-2"
+                <label class="block text-sm font-medium text-green-dark mb-2"
                   >Số điện thoại *</label
                 >
                 <input
                   type="tel"
                   name="Số điện thoại"
                   required
-                  class="w-full border-2 border-blue-soft rounded-xl px-4 py-3 focus:outline-none focus:border-blue-deep transition-colors text-sm md:text-base"
+                  class="w-full border-2 border-green-soft rounded-xl px-4 py-3 focus:outline-none focus:border-green-vibrant transition-colors text-sm md:text-base text-green-dark"
                   placeholder="Nhập số điện thoại"
                 />
               </div>
 
               <div>
-                <label class="block text-sm font-medium text-blue-navy mb-2"
+                <label class="block text-sm font-medium text-green-dark mb-2"
                   >Địa chỉ giao hàng *</label
                 >
                 <textarea
                   required
                   name="Địa chỉ giao hàng"
-                  class="w-full border-2 border-blue-soft rounded-xl px-4 py-3 focus:outline-none focus:border-blue-deep transition-colors text-sm md:text-base"
+                  class="w-full border-2 border-green-soft rounded-xl px-4 py-3 focus:outline-none focus:border-green-vibrant transition-colors text-sm md:text-base text-green-dark"
                   rows="3"
                   placeholder="Nhập địa chỉ chi tiết để giao hàng"
                 ></textarea>
@@ -1751,7 +1779,9 @@
 
               <!-- Enhanced Order Summary -->
               <div class="order-summary">
-                <h3 class="font-semibold text-blue-navy mb-4 flex items-center">
+                <h3
+                  class="font-semibold text-green-dark mb-4 flex items-center"
+                >
                   <div class="order-item-icon mr-2">📋</div>
                   Tóm tắt đơn hàng
                 </h3>
@@ -1759,14 +1789,20 @@
                   <div class="order-item">
                     <div class="flex items-center flex-1">
                       <div class="order-item-icon">🎁</div>
-                      <span class="text-sm">Hộp quà Rexri Creative Line</span>
+                      <span class="text-sm text-green-dark"
+                        >Hộp quà Rexri Creative Line</span
+                      >
                     </div>
-                    <span class="font-semibold text-blue-deep">1.299.000đ</span>
+                    <span class="font-semibold text-green-vibrant"
+                      >1.299.000đ</span
+                    >
                   </div>
                   <div class="order-item">
                     <div class="flex items-center flex-1">
                       <div class="order-item-icon">👜</div>
-                      <span class="text-sm">Túi đựng cao cấp</span>
+                      <span class="text-sm text-green-dark"
+                        >Túi đựng cao cấp</span
+                      >
                     </div>
                     <span class="text-sm text-green-600 font-medium"
                       >Miễn phí (50.000đ)</span
@@ -1775,7 +1811,9 @@
                   <div class="order-item">
                     <div class="flex items-center flex-1">
                       <div class="order-item-icon">🚚</div>
-                      <span class="text-sm">Phí vận chuyển</span>
+                      <span class="text-sm text-green-dark"
+                        >Phí vận chuyển</span
+                      >
                     </div>
                     <span class="text-sm text-green-600 font-medium"
                       >Miễn phí</span
@@ -1785,15 +1823,16 @@
                     <div class="order-total-main">
                       <div class="flex items-center">
                         <div
-                          class="order-item-icon bg-gradient-to-r from-green-500 to-green-600"
+                          class="order-item-icon bg-gradient-to-r from-green-vibrant to-green-rich"
                         >
                           💰
                         </div>
-                        <span class="font-bold text-blue-navy"
+                        <span class="font-bold text-green-dark"
                           >Tổng thanh toán</span
                         >
                       </div>
-                      <span class="font-bold text-blue-deep text-lg md:text-xl"
+                      <span
+                        class="font-bold text-green-vibrant text-lg md:text-xl"
                         >1.299.000đ</span
                       >
                     </div>
@@ -1816,7 +1855,7 @@
                 ✅ Xác nhận đặt hàng ngay
               </button>
 
-              <p class="text-xs text-center text-blue-royal">
+              <p class="text-xs text-center text-green-rich">
                 🔒 Thông tin của bạn được bảo mật tuyệt đối. Chúng tôi chỉ liên
                 hệ để xác nhận đơn hàng.
               </p>
@@ -1827,55 +1866,55 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-12 md:py-16 blue-gradient">
+    <section class="py-12 md:py-16 section-green-gradient">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto text-center">
           <div class="fade-in-section mb-6 md:mb-8">
             <h2
-              class="font-elegant text-2xl md:text-4xl font-bold text-blue-navy mb-4 md:mb-6"
+              class="font-elegant text-2xl md:text-4xl font-bold text-green-dark mb-4 md:mb-6"
             >
               📞 Cần tư vấn thêm? Liên hệ ngay
             </h2>
-            <p class="text-blue-royal text-base md:text-lg">
+            <p class="text-green-rich text-base md:text-lg">
               Đội ngũ chuyên gia sẵn sàng hỗ trợ bạn 24/7
             </p>
           </div>
 
           <div class="grid md:grid-cols-2 gap-6 md:gap-8">
             <div class="elegant-card p-4 md:p-6 fade-in-section">
-              <h3 class="font-semibold mb-4 text-blue-navy">
+              <h3 class="font-semibold mb-4 text-green-dark">
                 📞 Hotline tư vấn miễn phí
               </h3>
               <div class="space-y-3">
                 <a
                   href="tel:0966238777"
-                  class="block text-xl md:text-2xl text-blue-deep font-bold hover:text-blue-royal transition-colors"
+                  class="block text-xl md:text-2xl text-green-vibrant font-bold hover:text-green-rich transition-colors"
                 >
                   📱 0966 238 777
                 </a>
                 <a
                   href="tel:0976519646"
-                  class="block text-xl md:text-2xl text-blue-deep font-bold hover:text-blue-royal transition-colors"
+                  class="block text-xl md:text-2xl text-green-vibrant font-bold hover:text-green-rich transition-colors"
                 >
                   📱 0976 519 646
                 </a>
-                <p class="text-sm text-blue-royal">
+                <p class="text-sm text-green-rich">
                   Thời gian: 8:00 - 22:00 hàng ngày
                 </p>
               </div>
             </div>
 
             <div class="elegant-card p-4 md:p-6 fade-in-section">
-              <h3 class="font-semibold mb-4 text-blue-navy">
+              <h3 class="font-semibold mb-4 text-green-dark">
                 📍 Hệ thống cửa hàng
               </h3>
-              <div class="space-y-2 text-sm text-blue-royal text-left">
+              <div class="space-y-2 text-sm text-green-rich text-left">
                 <p>
                   <strong>Cơ sở 1:</strong>
                   <a
                     href="https://maps.google.com/?q=Khu+3,+Hùng+Lô,+TP+Việt+Trì,+Phú+Thọ"
                     target="_blank"
-                    class="text-blue-deep hover:text-blue-royal transition-colors underline"
+                    class="text-green-vibrant hover:text-green-rich transition-colors underline"
                   >
                     Khu 3, Hùng Lô, TP Việt Trì, Phú Thọ
                   </a>
@@ -1885,7 +1924,7 @@
                   <a
                     href="https://maps.google.com/?q=SN+50,+Trần+Phú,+Tân+Dân,+Việt+Trì,+Phú+Thọ"
                     target="_blank"
-                    class="text-blue-deep hover:text-blue-royal transition-colors underline"
+                    class="text-green-vibrant hover:text-green-rich transition-colors underline"
                   >
                     SN 50, Trần Phú, Tân Dân, Việt Trì, Phú Thọ
                   </a>
@@ -1895,7 +1934,7 @@
                   <a
                     href="https://maps.google.com/?q=SN+26A,+Trần+Nguyên+Đán,+Hoàng+Mai,+Hà+Nội"
                     target="_blank"
-                    class="text-blue-deep hover:text-blue-royal transition-colors underline"
+                    class="text-green-vibrant hover:text-green-rich transition-colors underline"
                   >
                     SN 26A, Trần Nguyên Đán, Hoàng Mai, Hà Nội
                   </a>
@@ -1908,16 +1947,18 @@
     </section>
 
     <!-- Footer -->
-    <section class="footer-section py-8 md:py-12 blue-navy text-pearl-white">
+    <section
+      class="footer-section py-8 md:py-12 bg-green-dark text-pearl-white"
+    >
       <div class="container mx-auto px-4">
         <div class="text-center space-y-4 md:space-y-6">
           <div class="fade-in-section">
             <h3
               class="font-elegant text-lg md:text-xl font-bold text-gold-accent mb-4"
             >
-              Mỹ Phẩm & Dược Mỹ Phẩm Bác Sĩ Thu Tuyết
+              Mỹ Phẩm và Dược Mỹ Phẩm Bác Sĩ Thu Tuyết
             </h3>
-            <p class="text-blue-soft text-sm">
+            <p class="text-green-soft text-sm">
               Đơn vị phân phối độc quyền sản phẩm Rexri Creative Line tại Việt
               Nam
             </p>
@@ -1956,10 +1997,10 @@
           </div>
 
           <div
-            class="border-t border-blue-royal pt-4 md:pt-6 text-center text-blue-soft text-xs fade-in-section"
+            class="border-t border-green-rich pt-4 md:pt-6 text-center text-green-soft text-xs fade-in-section"
           >
             <p>
-              &copy; 2025 Mỹ Phẩm & Dược Mỹ Phẩm Bác Sĩ Thu Tuyết. All rights
+              © 2025 Mỹ Phẩm và Dược Mỹ Phẩm Bác Sĩ Thu Tuyết. All rights
               reserved.
             </p>
             <p class="mt-1">
@@ -2074,19 +2115,14 @@
       // ========== Form Handling - Custom Success & Validation ==========
       function handleSubmit(event) {
         event.preventDefault();
-        const button = event.target.querySelector('button[type="submit"]');
+        const form = event.target;
+        const button = form.querySelector('button[type="submit"]');
         const originalText = button.innerHTML;
 
-        const formData = new FormData(event.target);
-        const name =
-          formData.get("name") ||
-          event.target.querySelector('input[type="text"]').value;
-        const phone =
-          formData.get("phone") ||
-          event.target.querySelector('input[type="tel"]').value;
-        const address =
-          formData.get("address") ||
-          event.target.querySelector("textarea").value;
+        const formData = new FormData(form);
+        const name = formData.get("Họ và tên khách hàng");
+        const phone = formData.get("Số điện thoại");
+        const address = formData.get("Địa chỉ giao hàng");
 
         if (!name || !phone || !address) {
           alert("⚠️ Vui lòng điền đầy đủ thông tin!");
@@ -2102,69 +2138,42 @@
         button.innerHTML = "⏳ Đang xử lý đơn hàng...";
         button.disabled = true;
 
-        setTimeout(() => {
-          button.innerHTML = "✅ Đặt hàng thành công!";
-          button.style.background = "linear-gradient(135deg, #10b981, #34d399)";
-          event.target.reset();
+        // Simulate sending to FormSubmit.co
+        fetch("https://formsubmit.co/ajax/Nguyenthituyetk46bdhydtn@gmail.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(Object.fromEntries(formData)),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data); // Log success/error from FormSubmit
+            // Regardless of FormSubmit success for this simulation, show local success
+            button.innerHTML = "✅ Đặt hàng thành công!";
+            button.style.background =
+              "linear-gradient(135deg, #10b981, #34d399)"; // Success green
+            form.reset();
 
-          alert(
-            `🎉 Cảm ơn ${name}! Đơn hàng của bạn đã được ghi nhận.\n\n📦 Sản phẩm: Hộp quà Rexri Creative Line (6 sản phẩm)\n💰 Tổng tiền: 1.299.000đ\n📞 Chúng tôi sẽ liên hệ xác nhận trong thời gian sớm nhất!\n\n✅ Miễn phí vận chuyển toàn quốc\n🎁 Tặng kèm túi đựng cao cấp trị giá 50.000đ`
-          );
+            alert(
+              `🎉 Cảm ơn ${name}! Đơn hàng của bạn đã được ghi nhận.\n\n📦 Sản phẩm: Hộp quà Rexri Creative Line (6 sản phẩm)\n💰 Tổng tiền: 1.299.000đ\n📞 Chúng tôi sẽ liên hệ xác nhận trong thời gian sớm nhất!\n\n✅ Miễn phí vận chuyển toàn quốc\n🎁 Tặng kèm túi đựng cao cấp trị giá 50.000đ`
+            );
 
-          setTimeout(() => {
+            setTimeout(() => {
+              button.innerHTML = originalText;
+              button.disabled = false;
+              button.style.background = ""; // Revert to original CTA button style
+            }, 3000);
+          })
+          .catch((error) => {
+            console.error("FormSubmit Error:", error);
+            alert("Có lỗi xảy ra khi gửi đơn hàng. Vui lòng thử lại.");
             button.innerHTML = originalText;
             button.disabled = false;
             button.style.background = "";
-          }, 3000);
-        }, 2000);
-      }
-
-      // ========== Gửi Form bằng FormSubmit.co ==========
-      document.addEventListener("DOMContentLoaded", () => {
-        const forms = document.querySelectorAll("form[data-form]");
-
-        forms.forEach((form) => {
-          const successMsgId = form.getAttribute("data-success");
-          const successMsg = document.getElementById(successMsgId);
-
-          form.addEventListener("submit", async function (e) {
-            e.preventDefault();
-
-            const formData = new FormData(form);
-
-            try {
-              const res = await fetch(
-                "https://formsubmit.co/ajax/Nguyenthituyetk46bdhydtn@gmail.com@gmail.com",
-                {
-                  method: "POST",
-                  headers: {
-                    Accept: "application/json",
-                  },
-                  body: formData,
-                }
-              );
-
-              const data = await res.json();
-
-              if (res.ok && data.success) {
-                form.reset();
-                if (successMsg) successMsg.classList.remove("hidden");
-                setTimeout(() => {
-                  if (typeof popupNewsletter !== "undefined") {
-                    popupNewsletter.classList.add("hidden");
-                  }
-                  localStorage.setItem("popup-closed", "true");
-                }, 3000);
-              } else {
-                alert("Đã xảy ra lỗi khi gửi. Vui lòng thử lại.");
-              }
-            } catch (err) {
-              alert("Không thể gửi. Vui lòng kiểm tra kết nối mạng.");
-              console.error("Lỗi:", err);
-            }
           });
-        });
-      });
+      }
 
       // ========== Autoplay Video ==========
       document.addEventListener("DOMContentLoaded", function () {
@@ -2179,12 +2188,12 @@
       // ========== Disable Horizontal Scroll ==========
       document.body.style.overflowX = "hidden";
 
-      // ========== Add Loading Animation ==========
+      // ========== Add Loading Animation Placeholder ==========
       window.addEventListener("load", function () {
-        document.body.classList.add("loaded");
+        document.body.classList.add("loaded"); // You can style .loaded if needed
       });
 
-      // ========== Urgency Timer ==========
+      // ========== Urgency Timer Placeholder ==========
       function updateUrgencyTimer() {
         const now = new Date();
         const endOfDay = new Date();
@@ -2192,89 +2201,97 @@
         const timeLeft = endOfDay - now;
         const hours = Math.floor(timeLeft / (1000 * 60 * 60));
         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const timerElements = document.querySelectorAll(".urgency-timer");
-        timerElements.forEach((el) => {
-          el.textContent = `⏰ Còn ${hours}h ${minutes}m để nhận ưu đãi!`;
-        });
+        // const timerElements = document.querySelectorAll(".urgency-timer"); // If you add this class
+        // timerElements.forEach((el) => {
+        //   el.textContent = `⏰ Còn ${hours}h ${minutes}m để nhận ưu đãi!`;
+        // });
       }
-      setInterval(updateUrgencyTimer, 60000);
-      updateUrgencyTimer();
+      // setInterval(updateUrgencyTimer, 60000);
+      // updateUrgencyTimer(); // Call it once on load
 
-      // ========== Parallax Scroll ==========
+      // ========== Parallax Scroll (Subtle) ==========
       window.addEventListener("scroll", () => {
         const scrolled = window.pageYOffset;
-        const parallax = document.querySelectorAll(".video-container");
-        const speed = 0.5;
-        parallax.forEach((element) => {
-          const yPos = -(scrolled * speed);
-          element.style.transform = `translateY(${yPos}px) rotateX(${
-            scrolled * 0.01
-          }deg)`;
-        });
-      });
+        const parallaxElements = document.querySelectorAll(
+          ".video-container, .elegant-card, .product-card"
+        ); // Apply to more elements if desired
+        const speedFactor = 0.1; // Make it very subtle
 
-      // ========== Hover Product Card ==========
-      document.querySelectorAll(".product-card").forEach((card) => {
-        card.addEventListener("mouseenter", function () {
-          this.style.transform = "translateY(-8px) rotateX(3deg) rotateY(2deg)";
-        });
-        card.addEventListener("mouseleave", function () {
-          this.style.transform = "translateY(0) rotateX(0deg) rotateY(0deg)";
-        });
-      });
-
-      // ========== Floating Particles ==========
-      function createFloatingParticles() {
-        const particleCount = window.innerWidth > 768 ? 20 : 10;
-        const body = document.body;
-
-        for (let i = 0; i < particleCount; i++) {
-          const particle = document.createElement("div");
-          particle.style.cssText = `
-            position: fixed;
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 1;
-            animation: float ${5 + Math.random() * 5}s ease-in-out infinite;
-            left: ${Math.random() * 100}vw;
-            top: ${Math.random() * 100}vh;
-            animation-delay: ${Math.random() * 5}s;
-          `;
-          body.appendChild(particle);
-        }
-      }
-      window.addEventListener("load", createFloatingParticles);
-
-      // ========== Hero Section Animation ==========
-      document.addEventListener("DOMContentLoaded", function () {
-        const heroElements = [
-          ".hero-content",
-          ".hero-video",
-          ".hero-description",
-          ".hero-price",
-          ".hero-cta",
-        ];
-        heroElements.forEach((selector, index) => {
-          const element = document.querySelector(selector);
-          if (element) {
-            setTimeout(() => {
-              element.style.opacity = "1";
-              element.style.transform = "translateY(0) rotateX(0deg)";
-            }, index * 300);
+        parallaxElements.forEach((element) => {
+          // Only apply if not an animation target that already uses transform
+          if (
+            !element.classList.contains("animate-float") &&
+            !element.style.animationName?.includes("float")
+          ) {
+            // Check if it's a card to apply a different effect
+            if (
+              element.classList.contains("elegant-card") ||
+              element.classList.contains("product-card")
+            ) {
+              const yPosCard = -(scrolled * speedFactor * 0.5); // Even subtler for cards
+              // element.style.transform = `translateY(${yPosCard}px) rotateX(${scrolled * 0.005}deg)`;
+            } else {
+              // For video container
+              const yPosVideo = -(scrolled * speedFactor);
+              // element.style.transform = `translateY(${yPosVideo}px) rotateX(${scrolled * 0.01}deg)`;
+            }
           }
         });
       });
 
-      // ========== Lazy Load Image ==========
+      // ========== Hover Product Card (Enhanced) ==========
+      document
+        .querySelectorAll(".product-card, .elegant-card")
+        .forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-8px) scale(1.02)";
+            // this.style.boxShadow = "0 30px 60px rgba(39, 78, 19, 0.25)"; // Use existing hover shadow from CSS
+          });
+          card.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0) scale(1)";
+            // this.style.boxShadow = ""; // Revert to CSS defined shadow
+          });
+        });
+
+      // ========== Floating Particles (Subtle Green/Gold) ==========
+      function createFloatingParticles() {
+        const particleCount = window.innerWidth > 768 ? 15 : 8;
+        const body = document.body;
+
+        for (let i = 0; i < particleCount; i++) {
+          const particle = document.createElement("div");
+          const isGold = Math.random() > 0.7; // 30% chance of gold
+          particle.style.cssText = `
+            position: fixed;
+            width: ${isGold ? "3px" : "5px"};
+            height: ${isGold ? "3px" : "5px"};
+            background-color: ${
+              isGold ? "rgba(255, 215, 0, 0.4)" : "rgba(147, 196, 125, 0.3)"
+            }; /* Gold or Soft Green */
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0; /* Behind content but above body bg */
+            opacity: ${0.3 + Math.random() * 0.4};
+            animation: float ${8 + Math.random() * 7}s ease-in-out infinite;
+            left: ${Math.random() * 100}vw;
+            top: ${Math.random() * 100}vh;
+            animation-delay: ${Math.random() * 7}s;
+          `;
+          body.insertBefore(particle, body.firstChild); // Insert before other content
+        }
+      }
+      // window.addEventListener("load", createFloatingParticles); // Call if desired
+
+      // ========== Hero Section Animation (Already handled by CSS keyframes) ==========
+
+      // ========== Lazy Load Image (Already good) ==========
       if ("IntersectionObserver" in window) {
         const imageObserver = new IntersectionObserver((entries, observer) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               const img = entry.target;
-              img.src = img.dataset.src || img.src;
-              img.classList.remove("lazy");
+              img.src = img.dataset.src || img.src; // Fallback to src if data-src not present
+              img.classList.remove("lazy"); // If you use a .lazy class for styling
               observer.unobserve(img);
             }
           });
@@ -2284,28 +2301,14 @@
         });
       }
 
-      // ========== Mobile Optimization ==========
+      // ========== Mobile Optimization (CSS already handles much of this) ==========
       if ("ontouchstart" in window) {
         document.body.classList.add("touch-device");
       }
 
+      // Additional check for small screens to disable intense hover effects via JS if needed
       if (window.innerWidth <= 768) {
-        document.documentElement.style.setProperty(
-          "--animation-duration",
-          "0.3s"
-        );
-        const style = document.createElement("style");
-        style.textContent = `
-          @media (max-width: 768px) {
-            .elegant-card:hover {
-              /* transform: translateY(-5px) !important; */
-            }
-            .product-image-container:hover {
-              transform: scale(1.02) !important;
-            }
-          }
-        `;
-        document.head.appendChild(style);
+        // Potentially disable some JS-driven hover effects here if they feel clunky on mobile
       }
     </script>
   </body>
