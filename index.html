@@ -924,21 +924,20 @@
 
           <!-- Video Hero - Moved to position 2 -->
           <div class="hero-video">
-            <div class="video-container max-w-4xl mx-auto animate-float">
-              <video
-                autoplay
-                muted
-                loop
-                playsinline
-              >
-                <source src="./img/video-2.mp4" type="video/mp4" />
-                <img
-                  src="./img/rexri-creative-line.jpg"
-                  alt="Hộp quà Rexri Creative Line - Bộ sản phẩm chăm sóc da cao cấp từ Hàn Quốc"
-                  class="w-full h-auto"
-                />
-              </video>
-              <div class="video-overlay"></div>
+            <div
+              class="video-container max-w-4xl mx-auto aspect-video relative"
+            >
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://res.cloudinary.com/dsosczr7j/video/upload/v1748485501/video-2_qorrgt.mp4"
+                title="Rexri Creative Line Video Presentation"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <div
+                class="video-overlay absolute top-0 left-0 w-full h-full pointer-events-none"
+              ></div>
             </div>
           </div>
 
@@ -1522,7 +1521,11 @@
           class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto"
         >
           <div class="elegant-card p-4 md:p-6 text-center fade-in-section">
-            <img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/kr.svg" alt="Hàn Quốc" class="inline-block w-10 h-10 md:w-12 md:h-12 mb-4 rounded-full shadow" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/kr.svg"
+              alt="Hàn Quốc"
+              class="inline-block w-10 h-10 md:w-12 md:h-12 mb-4 rounded-full shadow"
+            />
             <h3 class="font-bold text-base md:text-lg mb-3 text-green-dark">
               Xuất xứ Hàn Quốc chính hãng
             </h3>
