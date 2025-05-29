@@ -719,9 +719,7 @@
         animation: fadeIn 1s ease-out;
       }
 
-      .hero-video {
-        animation: videoEntrance 1.2s ease-out 0.3s both;
-      }
+   
 
       .hero-description {
         animation: slideUp 0.8s ease-out 0.6s both;
@@ -921,25 +919,26 @@
               🎉 Ưu đãi có hạn - Tặng túi đựng cao cấp trị giá 50.000đ
             </div>
           </div>
-
-          <!-- Video Hero - Moved to position 2 -->
-          <div class="hero-video">
+            <!-- Video Hero - Moved to position 2 -->
+            <div class="hero-video">
             <div
               class="video-container max-w-4xl mx-auto aspect-video relative"
             >
-              <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://res.cloudinary.com/dsosczr7j/video/upload/v1748485501/video-2_qorrgt.mp4"
-                title="Rexri Creative Line Video Presentation"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+              <video
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://res.cloudinary.com/dsosczr7j/video/upload/v1748485501/video-2_qorrgt.mp4"
+              title="Rexri Creative Line Video Presentation"
+              autoplay
+              muted
+              loop
+              playsinline
+              poster="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rexri-creative-line.jpg-8xeGcLv9APV1QBDPmoNB8CJ6vD2WwT.jpeg"
+              ></video>
               <div
-                class="video-overlay absolute top-0 left-0 w-full h-full pointer-events-none"
+              class="video-overlay absolute top-0 left-0 w-full h-full pointer-events-none"
               ></div>
             </div>
-          </div>
+            </div>
 
           <!-- Gift Box Description - Moved to position 3 -->
           <div class="hero-description">
@@ -2175,12 +2174,20 @@
           });
       }
 
-      // ========== Autoplay Video ==========
+      // ========== Autoplay Video & Set 9:16 Aspect Ratio ==========
       document.addEventListener("DOMContentLoaded", function () {
         const video = document.querySelector("video");
         if (video) {
+          // Set aspect ratio 9:16 for the video container
+          const container = video.closest(".video-container");
+          if (container) {
+        container.style.aspectRatio = "9 / 16";
+        container.style.maxWidth = "360px";
+        container.style.marginLeft = "auto";
+        container.style.marginRight = "auto";
+          }
           video.play().catch(() => {
-            console.log("Video autoplay failed, showing poster image");
+        console.log("Video autoplay failed, showing poster image");
           });
         }
       });
